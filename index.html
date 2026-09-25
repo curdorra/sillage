@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sillage — a school of scent</title>
+<meta name="description" content="A school of scent for beginners: a sorting ceremony, six lessons, a perfumer's organ of 36 materials, a formula lab, the classics and their noses, an atlas and a smelling journal.">
+<meta name="theme-color" content="#140E19">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sillage — a school of scent">
+<meta property="og:description" content="A school of scent for beginners: a sorting ceremony, six lessons, a perfumer's organ of 36 materials, a formula lab, the classics and their noses, an atlas and a smelling journal.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23140E19'/%3E%3Cpath d='M16 6c4 5.5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7.5 7-13z' fill='none' stroke='%23D6BEF2' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:ital,wght@0,300..600;1,300..500&display=swap">
+<style>
+html{color-scheme:light}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+:root{
+  --ground:#F3F1F4; --paper:#FCFBFD; --ink:#211A26; --ink-2:#564D5E; --ink-3:#8A8192;
+  --line:#E1DBE5; --line-2:#EDE8F0; --accent:#5E4480; --accent-soft:#ECE5F3; --track:#E8E3EC;
+  --night:#140E19; --night-2:#1D1524;
+  --f-citrus:#9B8A1E; --f-floral:#B35F82; --f-aromatic:#5F8A4D; --f-aldehydic:#62758C; --f-woody:#7A5A43;
+  --f-amber:#AA6A1C; --f-musk:#8272A8; --f-marine:#2F7E98; --f-gourmand:#9C5536; --f-spicy:#A6413A; --f-animalic:#6A4E5C;
+  --display:"Bodoni Moda","Bodoni 72",Didot,"Didot LT STD",Georgia,serif;
+  --body:"Jost",Futura,"Avenir Next","Century Gothic",sans-serif;
+  --r:20px; --maxw:1160px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#15101A; --paper:#1D1623; --ink:#EFE9F3; --ink-2:#BCB2C4; --ink-3:#8C8295;
+    --line:#342B3C; --line-2:#2A2231; --accent:#C9B0EA; --accent-soft:#2C2337; --track:#2E2636;
+    --f-citrus:#D8C75E; --f-floral:#E99BBB; --f-aromatic:#A7CB8E; --f-aldehydic:#A9BACF; --f-woody:#C9A385;
+    --f-amber:#E7A95A; --f-musk:#BFB2DE; --f-marine:#7CC0D6; --f-gourmand:#D69B77; --f-spicy:#E3887A; --f-animalic:#C3A2B3;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#15101A; --paper:#1D1623; --ink:#EFE9F3; --ink-2:#BCB2C4; --ink-3:#8C8295;
+  --line:#342B3C; --line-2:#2A2231; --accent:#C9B0EA; --accent-soft:#2C2337; --track:#2E2636;
+  --f-citrus:#D8C75E; --f-floral:#E99BBB; --f-aromatic:#A7CB8E; --f-aldehydic:#A9BACF; --f-woody:#C9A385;
+  --f-amber:#E7A95A; --f-musk:#BFB2DE; --f-marine:#7CC0D6; --f-gourmand:#D69B77; --f-spicy:#E3887A; --f-animalic:#C3A2B3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-weight:350;font-size:16.5px;line-height:1.7;letter-spacing:.01em;padding-inline:20px;font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.01em;line-height:1.08}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin-inline:auto}
+.label{font-family:var(--body);font-weight:500;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3)}
+.small-caps{font-family:var(--body);font-weight:400;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.lede{color:var(--ink-2);max-width:60ch;font-size:17px}
+.muted{color:var(--ink-3)}
+.fine{font-size:13px;color:var(--ink-3);max-width:72ch}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none}
+
+/* ---------- app bar ---------- */
+.appbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;margin-inline:-20px;padding-inline:20px;
+  background:rgba(20,14,25,.78);-webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);
+  border-bottom:1px solid rgba(255,255,255,.07);color:#EFE9F3}
+.appbar .wrap{display:flex;align-items:center;gap:22px;height:62px}
+.wordmark{font-family:var(--body);font-weight:400;font-size:14px;letter-spacing:.46em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;justify-content:center}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:rgba(239,233,243,.62);padding:8px 11px;border-radius:999px;white-space:nowrap;transition:color .2s,background .2s}
+.nav a:hover{color:#EFE9F3}
+.nav a[aria-current="page"]{color:#EFE9F3;background:rgba(255,255,255,.09)}
+.house-chip{display:flex;align-items:center;gap:8px;padding:5px 12px 5px 6px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);cursor:pointer;font-size:11px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:#EFE9F3}
+.house-chip svg{width:24px;height:24px}
+.house-chip:hover{background:rgba(255,255,255,.1)}
+@media (max-width:900px){.appbar .wrap{flex-wrap:wrap;height:auto;padding-block:10px;gap:8px 14px}.nav{order:3;flex-basis:100%;justify-content:flex-start;margin-inline:-6px}.house-chip{margin-left:auto}}
+
+/* ---------- views ---------- */
+.view{padding-block:0 80px}
+.view:focus{outline:none}
+.page-head{padding-block:64px 36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:32px;align-items:end;border-bottom:1px solid var(--line);margin-bottom:36px}
+.page-head h1{font-size:clamp(44px,6.4vw,78px);line-height:1;letter-spacing:-.02em;margin-top:12px}
+.page-head h1 em{font-style:italic}
+@media (max-width:760px){.page-head{grid-template-columns:1fr;gap:16px;padding-top:44px}}
+section.block{padding-block:56px;border-top:1px solid var(--line)}
+section.block:first-of-type{border-top:none}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:32px;align-items:end;margin-bottom:34px}
+.sec-head h2{font-size:clamp(34px,4.6vw,54px);margin-top:10px}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:12px}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;font:500 11.5px var(--body);letter-spacing:.22em;text-transform:uppercase;padding:14px 26px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--ground);cursor:pointer;text-decoration:none;transition:transform .2s,opacity .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.small{padding:9px 16px;font-size:10.5px}
+.linkish{background:none;border:none;padding:0;cursor:pointer;font:500 11px var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-decoration:none}
+.linkish:hover{text-decoration:underline;text-underline-offset:4px}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink-2);white-space:nowrap}
+button.chip{cursor:pointer}
+button.chip[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+
+/* ---------- night band (hero) ---------- */
+.night{position:relative;overflow:hidden;margin-inline:-20px;padding-inline:20px;color:#EFE9F3;
+  --ink:#EFE9F3;--ink-2:#C8BDD1;--ink-3:#9A8FA4;--line:rgba(255,255,255,.1);--accent:#D6BEF2;
+  background:radial-gradient(60% 80% at 80% 20%,rgba(150,110,220,.2),transparent 70%),radial-gradient(40% 60% at 5% 100%,rgba(242,184,102,.08),transparent 70%),var(--night)}
+.night canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.night .wrap{position:relative;z-index:1}
+.night .btn{background:#EFE9F3;color:var(--night);border-color:#EFE9F3}
+.night .btn.ghost{background:transparent;color:#EFE9F3}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;padding-block:76px 88px}
+.hero h1{font-size:clamp(50px,7vw,96px);line-height:.98;letter-spacing:-.025em;margin-block:16px 26px}
+.hero h1 em{font-style:italic;background:linear-gradient(90deg,#D6BEF2,#F4A4C6 55%,#F6BC68);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{color:#C8BDD1}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hint{margin-top:30px;font-size:12px;letter-spacing:.06em;color:#9A8FA4;display:flex;gap:12px;align-items:center}
+.hint::before{content:"";width:30px;height:1px;background:currentColor}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:44px;padding-block:52px 64px}}
+
+/* ---------- blotter ---------- */
+.blotter{--paper:#F8F6FA;--ink:#211A26;--ink-2:#564D5E;--ink-3:#8A8192;--line:#E1DBE5;--track:#E8E3EC;--accent:#5E4480;
+  --f-citrus:#9B8A1E;--f-floral:#B35F82;--f-aromatic:#5F8A4D;--f-aldehydic:#62758C;--f-woody:#7A5A43;--f-amber:#AA6A1C;--f-musk:#8272A8;--f-marine:#2F7E98;--f-gourmand:#9C5536;--f-spicy:#A6413A;--f-animalic:#6A4E5C;
+  background:var(--paper);color:var(--ink);padding:52px 28px 24px;border-radius:0 0 4px 4px;
+  clip-path:polygon(0 32px,50% 0,100% 32px,100% 100%,0 100%);box-shadow:0 40px 80px -30px rgba(0,0,0,.7);transform:rotate(1deg)}
+.blotter.flat{transform:none;box-shadow:none;border:1px solid var(--line);clip-path:none;border-radius:var(--r);padding-top:26px}
+.bl-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.bl-top h3{font-size:28px}
+.clock{font-family:var(--body);font-weight:300;font-size:30px;letter-spacing:.04em;font-variant-numeric:tabular-nums;color:var(--accent);line-height:1}
+.bars{display:grid;gap:8px;margin-block:18px 16px}
+.bar-row{display:grid;grid-template-columns:120px 1fr 40px;gap:12px;align-items:center;font-size:13px}
+.bar-row .nm{color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-row .tr{height:8px;background:var(--track);border-radius:4px;overflow:hidden}
+.bar-row .tr i{display:block;height:100%;border-radius:4px;transition:width .2s linear}
+.bar-row .pc{font-size:11px;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums}
+.tier{font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-3);margin-top:6px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.ticks{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.blotter .btn.ghost{color:var(--ink);border-color:var(--ink);background:transparent}
+.bl-foot{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.strength{display:flex;gap:8px;align-items:center;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-left:auto}
+.strength .tr{width:80px;height:4px;border-radius:2px;background:var(--track);overflow:hidden}
+.strength i{display:block;height:100%;background:var(--ink-2)}
+.now{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;color:var(--ink-2)}
+.now b{color:var(--ink);font-weight:500}
+
+/* ---------- cards & grids ---------- */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+a.card{text-decoration:none;display:grid;gap:8px;align-content:start;transition:transform .25s,border-color .25s}
+a.card:hover{transform:translateY(-2px);border-color:var(--ink-3)}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid-3,.grid-4{grid-template-columns:1fr}}
+.lesson-card .num{font-family:var(--display);font-style:italic;font-size:44px;line-height:1;color:var(--accent)}
+.lesson-card h3{font-size:24px}
+.lesson-card p{font-size:14.5px;color:var(--ink-2)}
+.lesson-card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:6px}
+.done-mark{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--f-aromatic)}
+.progress-line{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.progress-line .tr{flex:1;min-width:120px;max-width:340px;height:4px;border-radius:2px;background:var(--track);overflow:hidden}
+.progress-line .tr i{display:block;height:100%;background:var(--accent);transition:width .4s}
+.door h3{font-size:30px}
+.door p{font-size:14.5px;color:var(--ink-2)}
+.door .count{font-family:var(--display);font-style:italic;font-size:18px;color:var(--accent)}
+.motd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:32px;align-items:center}
+.motd h3{font-size:clamp(40px,5vw,60px)}
+@media (max-width:760px){.motd{grid-template-columns:1fr;gap:16px}}
+
+/* ---------- lessons ---------- */
+.lesson{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:56px;align-items:start;padding-top:48px}
+.lesson article{max-width:680px}
+.lesson article > * + *{margin-top:20px}
+.lesson h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.02em;margin-top:10px}
+.lesson h2{font-size:30px;margin-top:40px}
+.lesson article p{font-size:17px;color:var(--ink-2);line-height:1.8}
+.lesson article p b{color:var(--ink);font-weight:500}
+.lesson .kicker-num{font-family:var(--display);font-style:italic;font-size:22px;color:var(--accent)}
+.pull{font-family:var(--display);font-style:italic;font-size:26px;line-height:1.35;color:var(--ink);border-left:2px solid var(--accent);padding-left:22px}
+.interactive{margin-block:32px!important;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.interactive > .label{display:block;margin-bottom:14px}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 90px);display:grid;gap:2px}
+.toc a{text-decoration:none;display:grid;grid-template-columns:28px 1fr;gap:8px;padding:10px 12px;border-radius:12px;font-size:14px;color:var(--ink-2)}
+.toc a span{font-family:var(--display);font-style:italic;color:var(--ink-3)}
+.toc a[aria-current="page"]{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+.toc a.done span{color:var(--f-aromatic)}
+.lesson-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:48px!important;padding-top:28px;border-top:1px solid var(--line)}
+@media (max-width:900px){.lesson{grid-template-columns:1fr;gap:24px}.toc{position:static;grid-template-columns:repeat(3,minmax(0,1fr))}.toc a{grid-template-columns:1fr;font-size:12.5px}}
+.steps-list{list-style:none;padding:0;margin:0;display:grid;gap:0;counter-reset:s}
+.steps-list li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:12px;padding-block:14px;border-top:1px solid var(--line);font-size:16px;color:var(--ink-2)}
+.steps-list li::before{content:counter(s);font-family:var(--display);font-style:italic;font-size:26px;color:var(--accent);line-height:1.1}
+.steps-list li b{color:var(--ink);font-weight:500}
+.conc-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.conc-table th,.conc-table td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+.conc-table th{font-weight:500;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.conc-table td:first-child{font-family:var(--display);font-size:19px}
+.conc-bar{height:6px;border-radius:3px;background:var(--track);position:relative;min-width:120px}
+.conc-bar i{position:absolute;top:0;bottom:0;border-radius:3px;background:var(--accent)}
+.calc{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+select,.field{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;color:var(--ink)}
+.calc-out{font-family:var(--display);font-size:24px;margin-top:12px}
+.rose-row{display:grid;grid-template-columns:150px 1fr 1fr;gap:14px;align-items:center;padding-block:9px;border-top:1px solid var(--line);font-size:14px}
+.rose-row .d{grid-column:1/-1;font-size:13px;color:var(--ink-3);margin-top:-4px}
+.pips{display:flex;gap:3px}
+.pips i{width:100%;max-width:26px;height:6px;border-radius:3px;background:var(--track)}
+.pips.amt i.f{background:var(--ink-3)}
+.pips.imp i.f{background:var(--f-floral)}
+.rose-head{display:grid;grid-template-columns:150px 1fr 1fr;gap:14px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+@media (max-width:520px){.rose-row,.rose-head{grid-template-columns:110px 1fr 1fr}}
+.kit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.kit .k{padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;gap:6px;margin:0 -1px -1px 0}
+.kit .k.done{background:var(--accent-soft)}
+.kit label{display:flex;gap:10px;align-items:center;cursor:pointer;font-family:var(--display);font-size:20px}
+.kit input{accent-color:var(--accent);width:17px;height:17px}
+.kit .m{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.kit p{font-size:13.5px;color:var(--ink-3)}
+@media (max-width:560px){.kit{grid-template-columns:1fr}}
+
+/* ---------- organ ---------- */
+.toolbar{display:grid;gap:14px;margin-bottom:28px}
+.search{display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:10px 18px;max-width:420px}
+.search input{border:none;background:transparent;outline:none;width:100%;font-size:15px}
+.search svg{flex:none;opacity:.5}
+.mats{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.mat{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px 20px 18px;display:grid;gap:10px;align-content:start;text-align:left;cursor:pointer;transition:transform .25s,border-color .25s}
+.mat:hover{transform:translateY(-2px);border-color:var(--ink-3)}
+.mat .top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.mat h3{font-size:25px;line-height:1.05}
+.mat .desc{font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink-2)}
+.tag{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.tag.syn{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+.meter{display:flex;gap:3px;align-items:center}
+.meter i{width:12px;height:5px;border-radius:2px;background:var(--track)}
+.meter i.f{background:var(--ink-2)}
+.meters{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.empty{padding:40px;text-align:center;color:var(--ink-3);border:1px dashed var(--line);border-radius:var(--r)}
+
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(10,6,14,.45);z-index:60;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.sheet{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);z-index:61;background:var(--paper);border-left:1px solid var(--line);overflow-y:auto;
+  padding:calc(env(safe-area-inset-top,0px) + 28px) 32px calc(env(safe-area-inset-bottom,0px) + 40px);box-shadow:-30px 0 80px -30px rgba(0,0,0,.4);animation:slidein .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes slidein{from{transform:translateX(30px);opacity:.001}to{transform:none;opacity:1}}
+.sheet .close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 18px);right:18px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--ground);cursor:pointer;font-size:20px;line-height:1}
+.sheet h2{font-size:48px;margin-top:10px;padding-right:40px}
+.sheet .desc{font-family:var(--display);font-style:italic;font-size:20px;color:var(--ink-2);margin-top:6px}
+.sheet dl{display:grid;grid-template-columns:120px 1fr;gap:14px 16px;margin:26px 0 0;font-size:14.5px}
+.sheet dt{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);padding-top:4px}
+.sheet dd{margin:0;color:var(--ink-2)}
+.sheet .note{margin-top:24px;padding:18px 20px;border-radius:16px;background:var(--accent-soft);font-size:14.5px;color:var(--ink-2)}
+.sheet .note b{display:block;font-weight:500;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.sheet .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+
+/* ---------- lab ---------- */
+.lab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:28px;align-items:start}
+@media (max-width:980px){.lab{grid-template-columns:1fr}}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.formula{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.f-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.f-head h3{font-size:26px}
+.f-cols,.f-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.3fr) 58px 52px 28px;gap:12px;align-items:center;padding:9px 22px}
+.f-cols{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--line)}
+.f-row{border-bottom:1px solid var(--line-2);font-size:14px}
+.f-row .nm{display:flex;gap:8px;align-items:center;min-width:0}
+.f-row .nm button{background:none;border:none;padding:0;cursor:pointer;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.f-row .nm button:hover{text-decoration:underline;text-underline-offset:3px}
+.f-row input[type=number]{width:100%;background:var(--ground);border:1px solid var(--line);border-radius:8px;padding:4px 6px;font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
+.f-row .pct{font-size:12px;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums}
+.f-row .rm{background:none;border:none;cursor:pointer;color:var(--ink-3);font-size:18px;line-height:1;padding:0}
+.f-row .rm:hover{color:var(--f-spicy)}
+.f-foot{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px 22px}
+.f-foot .tot{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+@media (max-width:560px){.f-cols,.f-row{grid-template-columns:minmax(0,1fr) 64px 48px 24px;padding-inline:16px}.f-row input[type=range],.f-cols .sl{display:none}}
+.chart-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.chart-card svg{width:100%;height:auto;display:block;margin-top:12px}
+.readout{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:10px}
+.readout .when{font-family:var(--display);font-size:30px}
+.readout .what{font-size:14px;color:var(--ink-2)}
+.character{font-family:var(--display);font-style:italic;font-size:22px;margin-top:8px}
+.dilute{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:end;margin-top:16px}
+.dilute .out{font-family:var(--display);font-size:26px;grid-column:1/-1}
+.fam-bal{display:flex;height:10px;border-radius:5px;overflow:hidden;margin-top:14px;background:var(--track)}
+.fam-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:12px;color:var(--ink-2)}
+.fam-legend span{display:inline-flex;gap:6px;align-items:center}
+
+/* ---------- wheel ---------- */
+.wheel-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.wheel-box{max-width:470px;width:100%;margin-inline:auto}
+.wheel-box svg{width:100%;height:auto;display:block}
+.seg{cursor:pointer;transition:opacity .2s}
+.seg:hover{opacity:1!important}
+.fam-card h3{font-size:clamp(44px,5vw,64px);margin-block:10px 14px}
+.fam-card p{color:var(--ink-2);max-width:52ch}
+.fam-card .ex{margin-top:20px;font-size:14px}
+@media (max-width:860px){.wheel-grid{grid-template-columns:1fr}}
+.houses6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.h6{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:center;padding:18px 20px}
+.h6 h3{font-size:26px}
+.h6 p{font-family:var(--display);font-style:italic;font-size:15px;color:var(--ink-2)}
+.h6 svg{width:56px;height:56px}
+@media (max-width:860px){.houses6{grid-template-columns:1fr}}
+.h6-ink{--hc:var(--ink)}
+
+/* ---------- classics ---------- */
+.tl-row{display:grid;grid-template-columns:110px minmax(0,1fr) minmax(0,1.2fr);gap:28px;padding-block:24px;border-top:1px solid var(--line);align-items:start}
+.tl-row .y{font-family:var(--display);font-size:42px;line-height:1;color:var(--accent)}
+.tl-row h3{font-size:30px}
+.tl-row .by{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-top:6px}
+.tl-row .by b{font-weight:500;color:var(--ink-2)}
+.tl-row p{color:var(--ink-2);font-size:15.5px}
+.tl-row .chips{margin-top:10px}
+.tl-row .chips button{cursor:pointer}
+@media (max-width:760px){.tl-row{grid-template-columns:1fr;gap:6px}}
+.lineage{display:grid;gap:10px}
+.lineage h3{font-size:28px}
+.lineage ol{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.lineage li{padding-block:8px;border-top:1px solid var(--line);font-family:var(--display);font-size:18px}
+
+/* ---------- atlas ---------- */
+.feature{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;margin-bottom:40px}
+.feature h2{font-size:clamp(36px,4.6vw,54px);margin-block:10px 14px}
+.feature p{color:var(--ink-2)}
+@media (max-width:760px){.feature{grid-template-columns:1fr}}
+.places{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.place{display:grid;grid-template-columns:120px 1fr;gap:4px 20px;padding-block:22px;border-top:1px solid var(--line)}
+.place .c{grid-row:span 3;font-size:10.5px;letter-spacing:.1em;color:var(--ink-3);padding-top:8px;font-variant-numeric:tabular-nums}
+.place h3{font-size:28px}
+.place .m{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.place p{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:760px){.places{grid-template-columns:1fr}.place{grid-template-columns:1fr}.place .c{grid-row:auto;padding-top:0}}
+
+/* ---------- glossary ---------- */
+.gloss{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px}
+.gloss div{padding-block:18px;border-top:1px solid var(--line)}
+.gloss dt{font-family:var(--display);font-size:26px}
+.gloss dd{margin:4px 0 0;color:var(--ink-2);font-size:15px}
+@media (max-width:760px){.gloss{grid-template-columns:1fr}}
+
+/* ---------- journal ---------- */
+.journal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:32px;align-items:start}
+@media (max-width:900px){.journal{grid-template-columns:1fr}}
+.jform{display:grid;gap:14px}
+.jform label{display:grid;gap:6px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+.jform .field,.jform select{width:100%;text-transform:none;letter-spacing:.01em;font-size:15px}
+.jform textarea.field{min-height:110px;resize:vertical}
+.jform .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stars{display:flex;gap:6px}
+.stars input{position:absolute;opacity:0;pointer-events:none}
+.stars label{cursor:pointer;font-size:22px;color:var(--track);letter-spacing:0;text-transform:none}
+.stars label.on{color:var(--f-amber)}
+.stars input:focus-visible + label{outline:2px solid var(--accent);border-radius:4px}
+.entries{display:grid;gap:12px}
+.entry{display:grid;gap:6px}
+.entry .top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.entry h3{font-size:26px}
+.entry .meta{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.entry p{color:var(--ink-2);font-size:15px}
+.entry .del{justify-self:start}
+.example-tag{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px dashed var(--accent);border-radius:999px;padding:2px 9px}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translateX(-50%);z-index:80;background:var(--ink);color:var(--ground);padding:12px 20px;border-radius:999px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+
+footer.site{padding-block:40px 64px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-3)}
+footer.site .wordmark{color:var(--ink);font-size:13px}
+.support{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:32px;align-items:center}
+.support h2{font-size:clamp(34px,4.4vw,52px);margin-top:10px}
+.support h2 em{font-style:italic}
+.btn.coffee::before{content:"";width:14px;height:14px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 5h9v4.5A3.5 3.5 0 0 1 7.5 13h-2A3.5 3.5 0 0 1 2 9.5z' fill='none' stroke='black' stroke-width='1.4'/%3E%3Cpath d='M11 6.5h1.2a1.8 1.8 0 0 1 0 3.6H11' fill='none' stroke='black' stroke-width='1.4'/%3E%3Cpath d='M5 1.5c-.6.8.6 1.2 0 2M8 1.5c-.6.8.6 1.2 0 2' fill='none' stroke='black' stroke-width='1.1' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 5h9v4.5A3.5 3.5 0 0 1 7.5 13h-2A3.5 3.5 0 0 1 2 9.5z' fill='none' stroke='black' stroke-width='1.4'/%3E%3Cpath d='M11 6.5h1.2a1.8 1.8 0 0 1 0 3.6H11' fill='none' stroke='black' stroke-width='1.4'/%3E%3Cpath d='M5 1.5c-.6.8.6 1.2 0 2M8 1.5c-.6.8.6 1.2 0 2' fill='none' stroke='black' stroke-width='1.1' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat}
+@media (max-width:760px){.support{grid-template-columns:1fr;gap:16px}}
+
+/* ---------- ceremony ---------- */
+.ceremony{position:fixed;inset:0;z-index:100;overflow-y:auto;color:#EFE9F3;
+  --ink:#EFE9F3;--ink-2:#C8BDD1;--ink-3:#9A8FA4;--accent:#D6BEF2;
+  background:radial-gradient(70% 50% at 50% 0%,rgba(150,110,220,.22),transparent 70%),radial-gradient(50% 40% at 85% 100%,rgba(242,164,198,.09),transparent 70%),radial-gradient(50% 40% at 10% 90%,rgba(143,214,186,.07),transparent 70%),#100B15}
+.ceremony canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+.c-wrap{position:relative;z-index:1;max-width:1040px;margin-inline:auto;min-height:100%;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 22px) 20px calc(env(safe-area-inset-bottom,0px) + 48px)}
+.c-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.drops{display:flex;gap:9px}
+.drops i{width:9px;height:12px;border-radius:50% 50% 50% 50% / 62% 62% 38% 38%;background:rgba(255,255,255,.14);transition:background .3s,transform .3s}
+.drops i.on{background:#D6BEF2}
+.drops i.cur{transform:scale(1.35);background:rgba(255,255,255,.5)}
+.c-link{background:none;border:none;color:#9A8FA4;cursor:pointer;font:400 10.5px var(--body);letter-spacing:.22em;text-transform:uppercase;padding:8px 2px}
+.c-link:hover{color:#EFE9F3}
+#stage{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:210px 30px}
+.screen{animation:rise .7s cubic-bezier(.2,.7,.2,1) both;text-align:center;display:grid;justify-items:center}
+@keyframes rise{from{opacity:.001;transform:translateY(14px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.screen h1{font-size:clamp(44px,6.8vw,86px);line-height:1.02;letter-spacing:-.02em;max-width:16ch;margin-top:14px}
+.screen h2{font-size:clamp(30px,4.3vw,52px);line-height:1.12;max-width:22ch;margin-top:14px}
+.screen h1:focus,.screen h2:focus{outline:none}
+.shimmer{font-style:italic;background:linear-gradient(90deg,#D6BEF2,#F4A4C6,#F6BC68,#8FD6BA,#D6BEF2);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shim 10s linear infinite}
+@keyframes shim{to{background-position:300% 0}}
+.intro{color:#C8BDD1;font-size:18px;max-width:52ch;margin-top:22px}
+.c-nav{display:flex;gap:12px;margin-top:34px;justify-content:center;flex-wrap:wrap}
+.gbtn{font:500 11.5px var(--body);letter-spacing:.22em;text-transform:uppercase;padding:15px 28px;border-radius:999px;cursor:pointer;color:#EFE9F3;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);box-shadow:inset 0 1px 0 rgba(255,255,255,.16);transition:transform .2s,background .2s}
+.gbtn:hover{background:rgba(255,255,255,.13);transform:translateY(-1px)}
+.gbtn.primary{background:#F3ECF7;color:#1B1320;border-color:#F3ECF7}
+.tiles{display:grid;gap:12px;margin-top:36px;width:100%;max-width:900px}
+.tiles.six{grid-template-columns:repeat(3,minmax(0,1fr))}
+.tiles.five{grid-template-columns:repeat(6,minmax(0,1fr))}
+.tiles.five .tile{grid-column:span 2}
+.tiles.five .tile:nth-child(4){grid-column:2 / span 2}
+.tiles.four{grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px}
+.tiles.two{grid-template-columns:repeat(2,minmax(0,1fr));max-width:560px}
+.tile{font-family:var(--display);font-size:19px;line-height:1.3;color:#EFE9F3;text-align:center;padding:22px 18px;min-height:92px;border-radius:22px;cursor:pointer;display:grid;place-items:center;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),background .25s,border-color .25s,box-shadow .25s}
+.tiles.two .tile{min-height:150px;font-style:italic;font-size:46px}
+.tile:hover{transform:translateY(-2px);background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.24)}
+.tile[aria-pressed="true"]{background:rgba(214,190,242,.18);border-color:rgba(214,190,242,.7);box-shadow:0 0 0 4px rgba(214,190,242,.1),0 0 44px rgba(214,190,242,.25)}
+.kicker{font-size:10.5px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#9A8FA4}
+.roman{font-family:var(--display);font-style:italic;font-size:20px;color:#D6BEF2;letter-spacing:.02em}
+.fadein{animation:rise .6s ease both}
+.sorting h2{font-style:italic;font-size:clamp(32px,4.8vw,56px);max-width:18ch}
+.glass{background:rgba(255,255,255,.055);-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 24px 60px -24px rgba(0,0,0,.6)}
+.crest{border-radius:32px;padding:36px 28px 32px;max-width:720px;width:100%;display:grid;justify-items:center;gap:6px}
+.sig-wrap{display:grid;place-items:center;filter:drop-shadow(0 0 18px rgba(var(--hc),.55))}
+.hname{font-weight:400;background:linear-gradient(180deg,#FFFFFF 10%,rgb(var(--hc)));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hname.big{font-size:clamp(70px,12vw,140px);line-height:.95;letter-spacing:-.02em;margin-top:6px}
+.pron{font-family:var(--display);font-style:italic;font-size:18px;color:#9A8FA4}
+.motto{font-family:var(--display);font-style:italic;font-size:26px;color:rgb(var(--hc));margin-top:8px}
+.traits{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:14px}
+.traits span,.gchips span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.lore{color:#C8BDD1;max-width:54ch;margin-top:18px;font-size:15.5px}
+.lore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:100%;max-width:900px;margin-top:14px;text-align:left}
+.panel{border-radius:24px;padding:20px 22px;display:grid;gap:8px;align-content:start}
+.treasure{display:grid;font-family:var(--display);font-size:22px;padding-top:6px;line-height:1.2}
+.treasure span{font-family:var(--body);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#9A8FA4}
+.gchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.scorn{color:#C8BDD1;font-size:14.5px}
+.rival{font-size:13px;color:#9A8FA4;margin-top:6px}
+.rival b{font-weight:500}
+@media (max-width:760px){
+  #stage{padding-top:180px}
+  .tiles.six,.tiles.five,.tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tiles.five .tile,.tiles.five .tile:nth-child(4){grid-column:auto}
+  .tiles.five .tile:last-child{grid-column:1 / -1}
+  .lore-grid{grid-template-columns:1fr}
+  .tile{min-height:78px;font-size:16.5px;padding:16px 12px}
+  .tiles.two .tile{font-size:36px;min-height:120px}
+}
+@media (max-width:400px){.tiles.six,.tiles.four,.tiles.five{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="ceremony" class="ceremony" hidden role="dialog" aria-modal="true" aria-label="The Sorting">
+  <canvas id="cCanvas" aria-hidden="true"></canvas>
+  <div class="c-wrap">
+    <div class="c-top"><span class="wordmark">Sillage</span><div class="drops" id="drops" role="img" aria-label="Progress"></div><button class="c-link" id="cSkip" type="button">Skip to the app</button></div>
+    <div id="stage"></div>
+  </div>
+</div>
+
+<header class="appbar"><div class="wrap">
+  <a class="wordmark" href="#home">Sillage</a>
+  <nav class="nav" aria-label="Main">
+    <a href="#learn">Learn</a><a href="#organ">The Organ</a><a href="#lab">The Lab</a><a href="#families">Families</a><a href="#classics">Classics</a><a href="#atlas">Atlas</a><a href="#glossary">Glossary</a><a href="#journal">Journal</a>
+  </nav>
+  <button class="house-chip" id="houseChip" type="button"></button>
+</div></header>
+
+<main id="app">
+  <!-- HOME -->
+  <section class="view" data-view="home" tabindex="-1">
+    <div class="night" id="heroBand">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="wrap hero">
+        <div>
+          <p class="label">Lesson zero · The drydown</p>
+          <h1>A perfume is not a smell. It is <em>a story told in hours.</em></h1>
+          <p class="lede">You can't smell a screen, so Sillage teaches your nose another way: through materials, chemistry, history and small experiments with what's already in your kitchen. Drag the clock on the blotter and watch a fragrance unfold.</p>
+          <div class="cta"><a class="btn" href="#lesson-1">Begin the first lesson</a><a class="btn ghost" href="#organ">Open the organ</a></div>
+          <p class="hint">Move through this panel. The light you leave behind is your sillage.</p>
+        </div>
+        <div class="blotter" id="heroBlotter"></div>
+      </div>
+    </div>
+    <div class="wrap">
+      <section class="block" id="course">
+        <div class="sec-head">
+          <div><p class="label">The first course · six lessons</p><h2>From “it smells nice” to knowing why</h2></div>
+          <p class="lede">Each lesson takes about ten minutes and ends with something to do with your own nose. They build on each other, so take them in order.</p>
+        </div>
+        <div class="progress-line"><span class="small-caps" id="progText"></span><span class="tr"><i id="progBar"></i></span><a class="linkish" id="progNext" href="#lesson-1">Continue</a></div>
+        <div class="grid-3" id="lessonCards"></div>
+      </section>
+      <section class="block">
+        <div class="sec-head">
+          <div><p class="label">The studio</p><h2>Tools a perfumer would recognise</h2></div>
+          <p class="lede">Beyond the lessons, Sillage is a working reference: the materials, the structures, the classics and the people who made them.</p>
+        </div>
+        <div class="grid-4" id="doors"></div>
+      </section>
+      <section class="block" id="motd"></section>
+      <section class="block support">
+        <div><p class="label">An independent school</p><h2>Sillage is free, and <em>always will be</em></h2></div>
+        <div><p class="lede">No ads, no sign-ups, no affiliate links: every perfume here is chosen for what it teaches. If Sillage has taught your nose something, you can help keep it growing with a coffee.</p>
+        <p style="margin-top:20px"><a class="btn coffee" href="https://buymeacoffee.com/yirschen" target="_blank" rel="noopener">Buy me a coffee</a></p></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- LEARN -->
+  <section class="view" data-view="learn" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">The first course</p><h1>Learn to <em>smell</em></h1></div><p class="lede">Six short lessons, from what a note is to how to test perfume like a professional. Your progress is saved in this browser.</p></header>
+      <div class="progress-line"><span class="small-caps" id="progText2"></span><span class="tr"><i id="progBar2"></i></span></div>
+      <div class="grid-3" id="lessonCards2"></div>
+    </div>
+  </section>
+
+  <!-- LESSON -->
+  <section class="view" data-view="lesson" hidden tabindex="-1"><div class="wrap" id="lessonWrap"></div></section>
+
+  <!-- ORGAN -->
+  <section class="view" data-view="organ" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">The Organ · materials</p><h1>The perfumer's <em>palette</em></h1></div><p class="lede">A perfumer works at an “organ”: tiers of small bottles, naturals and aroma chemicals, each smelled thousands of times. Here are the ones every beginner should know by name.</p></header>
+      <div class="toolbar">
+        <label class="search"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><input id="organQ" type="search" placeholder="Search materials, smells, perfumes" aria-label="Search materials"></label>
+        <div class="chips" id="organType"></div>
+        <div class="chips" id="organFam"></div>
+      </div>
+      <div class="mats" id="organGrid"></div>
+      <p class="fine" style="margin-top:28px">Tenacity and impact are teaching estimates on simple scales, to help you compare materials. Real behaviour depends on grade, dilution and what a material is blended with.</p>
+    </div>
+  </section>
+
+  <!-- LAB -->
+  <section class="view" data-view="lab" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">The Lab · formula</p><h1>Compose in <em>parts</em></h1></div><p class="lede">Perfumers write formulas in parts per thousand. Start from a classic structure, change the proportions, and watch how the character shifts from spray to the next morning.</p></header>
+      <div class="presets" id="presets"></div>
+      <div class="lab">
+        <div>
+          <div class="formula" id="formula"></div>
+          <div class="card" style="margin-top:16px" id="dilute"></div>
+        </div>
+        <div class="chart-card" id="chartCard"></div>
+      </div>
+      <p class="fine" style="margin-top:24px">A teaching model: each material's presence is its parts × impact, fading at a rate set by its tenacity. Real evaporation also depends on vapour pressure, odour thresholds, skin and the way materials hold one another back. Real formulas use dozens of materials, many of them pre-diluted. Presets are sketches of classic structures, not the formulas of any perfume.</p>
+    </div>
+  </section>
+
+  <!-- FAMILIES -->
+  <section class="view" data-view="families" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">Families</p><h1>Twelve families, <em>one circle</em></h1></div><p class="lede">Neighbours blend easily; opposites contrast. Tap a segment to read about it. Simplified from the Fragrance Wheel created by Michael Edwards in 1983.</p></header>
+      <div class="wheel-grid"><div class="wheel-box"><svg id="wheelSvg" viewBox="0 0 400 400" role="img" aria-label="Fragrance wheel"></svg></div><div class="fam-card" id="famCard" aria-live="polite"></div></div>
+      <section class="block" style="margin-top:56px;border-top:1px solid var(--line)">
+        <div class="sec-head"><div><p class="label">The Sorting</p><h2>The six houses</h2></div><p class="lede">The ceremony sorts every visitor into one of six classic structures, named the way fragheads name themselves.</p></div>
+        <div class="houses6" id="houses6"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- CLASSICS -->
+  <section class="view" data-view="classics" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">Classics · with their noses</p><h1>Every era had <em>its molecule</em></h1></div><p class="lede">Perfume history reads best as a chain of materials and the perfumers bold enough to use them. Tap a material to open it in the organ.</p></header>
+      <div id="classicsList"></div>
+      <section class="block" style="margin-top:40px;border-top:1px solid var(--line)">
+        <div class="sec-head"><div><p class="label">In-house perfumers</p><h2>Houses and their noses</h2></div><p class="lede">Great houses pass their style from one perfumer to the next, like a workshop passing down a hand.</p></div>
+        <div class="grid-4" id="lineages"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ATLAS -->
+  <section class="view" data-view="atlas" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">The Atlas</p><h1>Perfume didn't start <em>in Paris</em></h1></div><p class="lede">Follow the materials back to their places, from Kannauj's copper stills to the rose valleys of Bulgaria.</p></header>
+      <div class="feature card">
+        <div>
+          <p class="label">Kannauj, Uttar Pradesh · featured</p>
+          <h2>Mitti: <em>the first rain</em>, bottled</h2>
+          <p>In Kannauj, attar makers bake discs of clay from dried pond beds, then distil them into sandalwood oil. The result captures petrichor, the smell of rain on dry earth. Its key molecule, geosmin, is made by soil microbes, and the human nose can detect it at extraordinarily low levels.</p>
+        </div>
+        <ol class="steps-list">
+          <li>Clay discs are baked and loaded into a copper still, the <i>deg</i>, with water.</li>
+          <li>A wood fire heats the <i>deg</i>; vapour travels through a bamboo pipe.</li>
+          <li>It condenses into a <i>bhapka</i>, a receiver holding sandalwood oil, cooled in water.</li>
+          <li>Over days the oil absorbs the scent. No alcohol is used: this is an attar.</li>
+        </ol>
+      </div>
+      <div class="places" id="places"></div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section class="view" data-view="glossary" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">Glossary</p><h1>Speak like <em>a nose</em></h1></div><p class="lede">The working vocabulary of perfumers and fragheads, from absolute to volatility.</p></header>
+      <div class="toolbar"><label class="search"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><input id="glossQ" type="search" placeholder="Search terms" aria-label="Search terms"></label></div>
+      <dl class="gloss" id="glossList"></dl>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="view" data-view="journal" hidden tabindex="-1">
+    <div class="wrap">
+      <header class="page-head"><div><p class="label">Smelling journal</p><h1>Words make <em>smells stick</em></h1></div><p class="lede">Log what you smell: the family, three words, how it wore. After a dozen entries, your own taste starts to show. Entries are saved in this browser only.</p></header>
+      <div class="journal">
+        <form class="card jform" id="jform">
+          <label for="jName">Perfume or material<input class="field" id="jName" required maxlength="80" placeholder="e.g. Terre d'Hermès"></label>
+          <div class="row2">
+            <label for="jFam">Family<select id="jFam"></select></label>
+            <label for="jOn">Smelled on<select id="jOn"><option>Skin</option><option>Smelling strip</option><option>Someone else</option><option>Kitchen or garden</option></select></label>
+          </div>
+          <label for="jWords">Three words<input class="field" id="jWords" maxlength="80" placeholder="e.g. flinty, orange peel, dry"></label>
+          <label for="jNotes">How it wore<textarea class="field" id="jNotes" maxlength="600" placeholder="Opening, after an hour, the next morning…"></textarea></label>
+          <fieldset style="border:none;padding:0;margin:0"><legend class="small-caps" style="margin-bottom:6px">Would you wear it?</legend><div class="stars" id="jStars"></div></fieldset>
+          <div><button class="btn" type="submit">Add to journal</button></div>
+        </form>
+        <div class="entries" id="entries"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site wrap"><span class="wordmark">Sillage</span><span>A school of scent for beginners · models simplified for teaching</span><a class="linkish" href="https://buymeacoffee.com/yirschen" target="_blank" rel="noopener">Support Sillage · Buy me a coffee ↗</a></footer>
+<div id="sheetRoot"></div>
+
+<script>
+/* ================= DATA ================= */
+const FAMS = {
+  citrus:{n:"Citrus"}, floral:{n:"Floral"}, aromatic:{n:"Aromatic"}, aldehydic:{n:"Aldehydic"},
+  woody:{n:"Woody"}, amber:{n:"Amber"}, musk:{n:"Musk"}, marine:{n:"Marine"},
+  gourmand:{n:"Gourmand"}, spicy:{n:"Spicy"}, animalic:{n:"Animalic"}
+};
+/* tenacity class -> time constant in hours (teaching model) */
+const TAU = {1:.35, 2:1.2, 3:3.5, 4:9, 5:24, 6:72};
+const TEN_WORD = {1:"Very volatile",2:"Volatile",3:"Medium",4:"Tenacious",5:"Very tenacious",6:"Lasts for days"};
+
+/* t: natural | synthetic   ten: 1-6 tenacity class   imp: odour impact 1-10 (teaching estimates) */
+const MATERIALS = [
+ {id:"bergamot",n:"Bergamot",t:"natural",fam:"citrus",ten:1,imp:5,d:["hesperidic","bitter","tea-like","floral"],
+  src:"Cold-pressed from the peel of Citrus bergamia, grown almost entirely along the coast of Calabria in southern Italy.",
+  note:"Natural bergamot contains bergapten, which can burn skin in sunlight, so perfumery uses furocoumarin-free (FCF) grades.",inn:"Eau Sauvage, Shalimar, Earl Grey tea"},
+ {id:"lemon",n:"Lemon",t:"natural",fam:"citrus",ten:1,imp:6,d:["zesty","sharp","sparkling"],
+  src:"Cold-pressed from the peel; Sicily, Argentina and California.",note:"Disappears from skin within minutes, which is why colognes are splashed on generously and often.",inn:"Classic eaux de cologne"},
+ {id:"neroli",n:"Neroli",t:"natural",fam:"citrus",ten:2,imp:7,d:["honeyed","green","soapy","floral"],
+  src:"Steam-distilled from the blossoms of the bitter orange tree, Citrus aurantium.",note:"The same blossoms, solvent-extracted, give orange flower absolute: warmer, fleshier and more indolic.",inn:"Colognes, orange-blossom florals"},
+ {id:"petitgrain",n:"Petitgrain",t:"natural",fam:"citrus",ten:2,imp:6,d:["green","woody","bitter"],
+  src:"Steam-distilled from the leaves and twigs of the same bitter orange tree.",note:"One tree, three materials: neroli from the flowers, petitgrain from the leaves, bitter orange from the peel.",inn:"Colognes"},
+ {id:"lavender",n:"Lavender",t:"natural",fam:"aromatic",ten:2,imp:6,d:["herbal","floral","fresh","hay"],
+  src:"Steam-distilled from Lavandula angustifolia; the finest from high-altitude Provence. Rich in linalool and linalyl acetate.",note:"The heart of the fougère family.",inn:"Jicky, Azzaro Pour Homme"},
+ {id:"clary",n:"Clary sage",t:"natural",fam:"aromatic",ten:2,imp:6,d:["herbal","ambery","tea"],
+  src:"Steam-distilled from Salvia sclarea.",note:"Also the source of sclareol, the starting point for making Ambrox.",inn:"Fougères, aromatic woods"},
+ {id:"geranium",n:"Geranium",t:"natural",fam:"floral",ten:3,imp:7,d:["rosy","minty","green"],
+  src:"Steam-distilled leaves of Pelargonium graveolens; Egypt, and Réunion for “Bourbon” geranium.",note:"Gives a rose effect at a fraction of the cost, and a sharp, leafy edge.",inn:"Fougères, masculine florals"},
+ {id:"rose",n:"Rose",t:"natural",fam:"floral",ten:3,imp:7,d:["rosy","honeyed","fruity","spicy"],
+  src:"Rose otto is steam-distilled from Rosa damascena in Bulgaria and Turkey. Rose absolute is solvent-extracted, fuller and more honeyed.",note:"It takes several tonnes of petals to make a single kilo of rose otto.",inn:"Portrait of a Lady, Nahéma"},
+ {id:"jasmine",n:"Jasmine",t:"natural",fam:"floral",ten:4,imp:8,d:["indolic","fruity","heady"],
+  src:"Solvent-extracted absolute of Jasminum grandiflorum (Grasse, Egypt, India) and J. sambac (India).",note:"Its natural indole gives the animalic, almost overripe depth perfumers prize.",inn:"Chanel No. 5, Joy"},
+ {id:"tuberose",n:"Tuberose",t:"natural",fam:"floral",ten:4,imp:8,d:["creamy","buttery","narcotic"],
+  src:"Solvent-extracted absolute of Polianthes tuberosa, mostly from India.",note:"One of the most opulent white florals; a little goes a long way.",inn:"Fracas, Do Son"},
+ {id:"orris",n:"Orris",t:"natural",fam:"floral",ten:5,imp:6,d:["powdery","violet","carrot","suede"],
+  src:"Rhizomes of Iris pallida are dried and aged for about three years, then steam-distilled into a waxy “butter.”",note:"Its scent comes from irones formed during ageing. Among the costliest materials in perfumery.",inn:"Iris Silver Mist, Dior Homme"},
+ {id:"vetiver",n:"Vetiver",t:"natural",fam:"woody",ten:5,imp:6,d:["earthy","smoky","rooty","grapefruit"],
+  src:"Steam-distilled roots of Chrysopogon zizanioides; Haiti, Java, and India, where it is called khus.",note:"In India, khus is also woven into screens that are wetted to scent and cool the air.",inn:"Vétiver (Guerlain), Terre d'Hermès"},
+ {id:"patchouli",n:"Patchouli",t:"natural",fam:"woody",ten:5,imp:7,d:["earthy","camphorous","cocoa","damp"],
+  src:"Dried, lightly fermented leaves of Pogostemon cablin, steam-distilled; mostly Indonesia.",note:"A pillar of the chypre and the backbone of Angel's gourmand darkness.",inn:"Angel, Coco Mademoiselle"},
+ {id:"sandalwood",n:"Sandalwood",t:"natural",fam:"woody",ten:5,imp:4,d:["creamy","milky","soft"],
+  src:"Santalum album (India, now largely plantation-grown, including in Australia) and S. spicatum (Western Australia).",note:"Wild Mysore sandalwood is severely restricted; much of what you smell is synthetic reconstruction.",inn:"Santal 33, Samsara"},
+ {id:"cedarwood",n:"Cedarwood (Virginia)",t:"natural",fam:"woody",ten:4,imp:4,d:["pencil shavings","dry","clean"],
+  src:"Steam-distilled from the wood of Juniperus virginiana.",note:"Despite the name, Virginia “cedar” is a juniper.",inn:"Féminité du Bois, countless woody bases"},
+ {id:"oud",n:"Oud",t:"natural",fam:"animalic",ten:6,imp:8,d:["leathery","animalic","woody","medicinal"],
+  src:"Aquilaria heartwood, darkened by resin after infection, hydrodistilled in Assam and Southeast Asia.",note:"Wild agarwood is protected under CITES; most “oud” in Western perfume is a reconstruction.",inn:"M7, Oud Wood"},
+ {id:"oakmoss",n:"Oakmoss",t:"natural",fam:"woody",ten:5,imp:7,d:["mossy","inky","forest floor"],
+  src:"Solvent-extracted from the lichen Evernia prunastri.",note:"Restricted by IFRA because of the allergens atranol and chloroatranol. Low-atranol grades exist, and older chypres were reformulated.",inn:"Mitsouko, Chypre de Coty"},
+ {id:"labdanum",n:"Labdanum",t:"natural",fam:"amber",ten:5,imp:7,d:["ambery","leathery","resinous"],
+  src:"A gum from Cistus ladanifer, the rockrose of Spain.",note:"In antiquity it was combed from the beards of goats that grazed on the shrubs.",inn:"Amber accords, chypres"},
+ {id:"benzoin",n:"Benzoin",t:"natural",fam:"amber",ten:5,imp:4,d:["vanillic","balsamic","sweet"],
+  src:"Resin tapped from Styrax trees; “Siam” benzoin comes from Laos and Thailand.",note:"A classic fixative: it slows the evaporation of what's around it.",inn:"Shalimar, amber bases"},
+ {id:"tonka",n:"Tonka bean",t:"natural",fam:"gourmand",ten:5,imp:6,d:["hay","almond","tobacco"],
+  src:"Absolute from the seeds of Dipteryx odorata.",note:"Naturally rich in coumarin.",inn:"Guerlain's Guerlinade"},
+ {id:"vanilla",n:"Vanilla",t:"natural",fam:"gourmand",ten:5,imp:6,d:["boozy","smoky","sweet"],
+  src:"Absolute from cured pods of Vanilla planifolia, mostly from Madagascar.",note:"Far more complex than vanillin alone: rum, leather, smoke.",inn:"Spiritueuse Double Vanille"},
+ {id:"frankincense",n:"Frankincense",t:"natural",fam:"spicy",ten:2,imp:6,d:["resinous","citrus-pepper","incense"],
+  src:"Resin of Boswellia sacra from Dhofar in Oman, steam-distilled.",note:"Also called olibanum. Traded along the Incense Route for millennia.",inn:"Avignon, church-incense scents"},
+ {id:"hedione",n:"Hedione",t:"synthetic",fam:"floral",ten:4,imp:3,d:["radiant","jasmine","airy","citrus"],cas:"24851-98-7",yr:1962,
+  src:"Methyl dihydrojasmonate. Discovered by Firmenich in 1962.",note:"Nearly odourless from the bottle, yet it adds light and diffusion. First used prominently in Eau Sauvage (1966).",inn:"Eau Sauvage, most modern perfumes"},
+ {id:"isoesuper",n:"Iso E Super",t:"synthetic",fam:"woody",ten:5,imp:3,d:["velvety","cedar","amber"],cas:"54464-57-2",yr:1973,
+  src:"Developed by IFF in 1973.",note:"Many people can barely smell it, a specific anosmia. Used generously in Terre d'Hermès and on its own in Molecule 01.",inn:"Molecule 01, Terre d'Hermès"},
+ {id:"ambroxan",n:"Ambroxan",t:"synthetic",fam:"amber",ten:6,imp:6,d:["mineral","ambergris","warm skin"],cas:"6790-58-5",yr:1950,
+  src:"Ambroxide, made from sclareol (from clary sage). Firmenich introduced it as Ambrox in 1950.",note:"Recreates the salty-sweet warmth of ambergris without the whale.",inn:"Sauvage (2015), Molecule 02"},
+ {id:"calone",n:"Calone",t:"synthetic",fam:"marine",ten:4,imp:9,d:["sea spray","melon","ozonic"],cas:"28940-11-6",yr:1966,
+  src:"Watermelon ketone, discovered by Pfizer chemists in 1966.",note:"Powerful in traces. It defined the marine perfumes of the 1990s.",inn:"L'Eau d'Issey, New West"},
+ {id:"ethylmaltol",n:"Ethyl maltol",t:"synthetic",fam:"gourmand",ten:4,imp:7,d:["cotton candy","caramel","jammy"],cas:"4940-11-8",
+  src:"A food flavouring before it became a perfume material.",note:"Its overdose in Angel (1992) set off the gourmand era.",inn:"Angel, La Vie est Belle"},
+ {id:"coumarin",n:"Coumarin",t:"synthetic",fam:"aromatic",ten:4,imp:5,d:["hay","almond","warm"],cas:"91-64-5",yr:1868,
+  src:"Occurs in tonka and fresh-cut hay; first synthesised by William Perkin in 1868.",note:"Its use in Fougère Royale (1882) made it one of the first synthetics in fine perfumery.",inn:"Fougère Royale, Jicky"},
+ {id:"vanillin",n:"Vanillin",t:"synthetic",fam:"amber",ten:5,imp:6,d:["vanilla","sweet","creamy"],cas:"121-33-5",yr:1874,
+  src:"The main odorant of vanilla, first synthesised in 1874.",note:"Jacques Guerlain's generous use of it helped make Shalimar legendary.",inn:"Shalimar, Jicky"},
+ {id:"galaxolide",n:"Galaxolide",t:"synthetic",fam:"musk",ten:6,imp:3,d:["clean","laundry","sweet musk"],cas:"1222-05-5",
+  src:"A polycyclic musk developed by IFF in the 1960s.",note:"The “clean laundry” smell of detergents and countless perfumes. Many people are partly anosmic to musks.",inn:"Laundry musks, modern skin scents"},
+ {id:"habanolide",n:"Habanolide",t:"synthetic",fam:"musk",ten:6,imp:3,d:["clean","metallic","warm skin"],
+  src:"A macrocyclic musk from Firmenich.",note:"Modern musks are how perfumers make a scent feel like “skin, but better.”",inn:"Modern skin scents"},
+ {id:"aldehydes",n:"Aldehydes C-10 to C-12",t:"synthetic",fam:"aldehydic",ten:3,imp:9,d:["waxy","soapy","fizzy","citrus peel"],
+  src:"Fatty aldehydes: decanal, undecanal, dodecanal and relatives.",note:"Ernest Beaux used them unusually generously in Chanel No. 5 (1921), giving its famous sparkle.",inn:"Chanel No. 5, Arpège"},
+ {id:"linalool",n:"Linalool",t:"synthetic",fam:"aromatic",ten:2,imp:4,d:["fresh","floral","woody"],cas:"78-70-6",
+  src:"Found in lavender, bergamot, coriander and hundreds of other plants; also made synthetically.",note:"One of the most widely used materials in all of perfumery.",inn:"Almost everything"},
+ {id:"indole",n:"Indole",t:"synthetic",fam:"animalic",ten:4,imp:8,d:["faecal","white floral","mothball"],cas:"120-72-9",
+  src:"Occurs naturally in jasmine, orange blossom and tuberose.",note:"Unpleasant on its own, it makes white flowers smell alive at a trace.",inn:"Jasmine accords"},
+ {id:"eugenol",n:"Eugenol",t:"synthetic",fam:"spicy",ten:3,imp:7,d:["clove","spicy","warm"],cas:"97-53-0",
+  src:"The main odorant of clove; also in carnation, basil and bay.",note:"The backbone of carnation accords.",inn:"L'Air du Temps, Opium"},
+ {id:"dhm",n:"Dihydromyrcenol",t:"synthetic",fam:"citrus",ten:2,imp:6,d:["fresh","metallic","lime"],cas:"18479-58-8",
+  src:"A synthetic terpene alcohol.",note:"Its overdose shaped the fresh masculines of the late 1980s, including Cool Water.",inn:"Cool Water, Drakkar Noir"}
+];
+const MAT = Object.fromEntries(MATERIALS.map(m=>[m.id,m]));
+
+/* Formula presets: parts per thousand. Teaching sketches, not real formulas. */
+const PRESETS = [
+ {id:"study",n:"Study No. 1",d:"A bright woody cologne, the one on the home page.",f:{bergamot:200,lemon:80,lavender:100,hedione:220,orris:20,cedarwood:80,isoesuper:160,ambroxan:50,vanillin:30,galaxolide:60}},
+ {id:"cologne",n:"Eau de Cologne",d:"The 18th-century structure: citrus, orange tree, herbs.",f:{bergamot:300,lemon:200,neroli:120,petitgrain:120,lavender:80,galaxolide:80,cedarwood:100}},
+ {id:"fougere",n:"Fougère",d:"Lavender and coumarin over moss: the barbershop classic.",f:{lavender:280,bergamot:180,geranium:60,coumarin:140,oakmoss:60,vetiver:60,patchouli:40,sandalwood:80,galaxolide:100}},
+ {id:"chypre",n:"Chypre",d:"Bergamot over labdanum, oakmoss and patchouli, after Coty's 1917 structure.",f:{bergamot:280,rose:70,jasmine:50,labdanum:150,oakmoss:90,patchouli:120,vetiver:60,galaxolide:80,sandalwood:100}},
+ {id:"amber",n:"Amber accord",d:"Labdanum, vanillin and benzoin: the classic warm triad.",f:{labdanum:250,vanillin:180,benzoin:250,coumarin:60,patchouli:60,sandalwood:100,bergamot:100}},
+ {id:"aldehydic",n:"Aldehydic floral",d:"A trace of aldehydes lifting rose and jasmine.",f:{aldehydes:15,rose:120,jasmine:80,orris:20,hedione:200,bergamot:150,sandalwood:150,vetiver:50,vanillin:40,galaxolide:175}},
+ {id:"transparent",n:"Transparent woody",d:"The 21st-century skin scent: Iso E Super and Hedione.",f:{isoesuper:400,hedione:250,ambroxan:60,bergamot:120,cedarwood:80,galaxolide:90}}
+];
+const LAB_IDS = ["bergamot","lemon","neroli","petitgrain","lavender","clary","geranium","rose","jasmine","tuberose","orris","hedione","aldehydes","calone","isoesuper","cedarwood","vetiver","patchouli","sandalwood","oakmoss","labdanum","benzoin","tonka","coumarin","vanillin","ethylmaltol","ambroxan","galaxolide","frankincense","eugenol"];
+
+const CONC = [
+ {id:"edc",n:"Eau de Cologne",lo:2,hi:5},{id:"edt",n:"Eau de Toilette",lo:5,hi:15},
+ {id:"edp",n:"Eau de Parfum",lo:15,hi:20},{id:"ext",n:"Parfum / Extrait",lo:20,hi:30}
+];
+
+/* Rose deconstruction: amount vs impact */
+const ROSE = [
+ {n:"Citronellol",amt:3,imp:2,d:"fresh rosy-citrus"},
+ {n:"Geraniol",amt:3,imp:2,d:"sweet, rosy"},
+ {n:"Phenylethyl alcohol",amt:3,imp:1,d:"soft, honeyed rose (major in the absolute)"},
+ {n:"Nerol",amt:2,imp:2,d:"fresh, sweet rose"},
+ {n:"Rose oxide",amt:1,imp:4,d:"green, metallic, lychee"},
+ {n:"β-Damascenone",amt:1,imp:5,d:"fruity, cooked apple, plum"},
+ {n:"Stearoptene waxes",amt:2,imp:0,d:"odourless, but they shape the texture"}
+];
+
+/* Kitchen training */
+const KITCHEN = [
+ {n:"Cloves",m:"eugenol",d:"Warm and medicinal. Also found in carnation and basil."},
+ {n:"Vanilla pod",m:"vanillin",d:"Sweet and creamy. The pod has hundreds of compounds; vanillin leads."},
+ {n:"Cinnamon",m:"cinnamaldehyde",d:"Hot, sweet spice. Notice the tingle: some molecules are felt as well as smelled."},
+ {n:"Orange peel",m:"limonene",d:"Squeeze it near your nose. That burst is a top note in miniature."},
+ {n:"Spearmint",m:"(R)-carvone",d:"Its mirror image, (S)-carvone, smells of caraway. Same atoms, different smell."},
+ {n:"Coriander seed",m:"linalool",d:"Crush a few seeds. That floral freshness is also inside lavender and bergamot."}
+];
+
+/* Wheel: simplified, after Michael Edwards' Fragrance Wheel */
+const WHEEL = [
+ {n:"Citrus",g:"fresh",d:"Pressed peels: bergamot, lemon, grapefruit, mandarin. Bright and uplifting, the first to fade.",notes:["Bergamot","Lemon","Neroli"],ex:"Classic eaux de cologne"},
+ {n:"Water",g:"fresh",d:"Sea air, wet stone, cucumber. Built largely from aroma chemicals like Calone, since the ocean can't be distilled.",notes:["Calone","Melon","Sea salt"],ex:"L'Eau d'Issey"},
+ {n:"Aromatic",g:"fresh",d:"Lavender, rosemary, sage and clary sage. Herbal and clean: the heart of the fougère.",notes:["Lavender","Coumarin","Geranium"],ex:"Jicky, Azzaro Pour Homme"},
+ {n:"Fruity",g:"floral",d:"Pear, blackcurrant, peach. Often paired with florals for an easy, friendly start.",notes:["Cassis","Peach","Pear"],ex:"Many modern bestsellers"},
+ {n:"Floral",g:"floral",d:"The largest family, from a single flower (a soliflore) to abstract bouquets.",notes:["Rose","Jasmine","Tuberose"],ex:"Joy, Fracas"},
+ {n:"Soft floral",g:"floral",d:"Powdery and plush: iris, violet, aldehydes. Face powder and clean skin.",notes:["Orris","Aldehydes","Violet"],ex:"Chanel No. 5"},
+ {n:"Floral amber",g:"amber",d:"Flowers wrapped in warmth: orange blossom with spice, jasmine with resin.",notes:["Orange blossom","Benzoin","Clove"],ex:"L'Air du Temps"},
+ {n:"Soft amber",g:"amber",d:"Incense, vanilla and resins softened with musk.",notes:["Vanilla","Frankincense","Musk"],ex:"Shalimar's softer cousins"},
+ {n:"Amber",g:"amber",d:"Labdanum, benzoin and vanilla. Warm, rich and slow. Once called “oriental.”",notes:["Labdanum","Benzoin","Vanillin"],ex:"Shalimar"},
+ {n:"Woody amber",g:"woody",d:"Dry woods with a warm glow: ambroxan, oud, the modern amber-woods.",notes:["Ambroxan","Oud","Cedar"],ex:"Sauvage"},
+ {n:"Woods",g:"woody",d:"Sandalwood's cream, cedar's pencil shavings, vetiver's roots.",notes:["Sandalwood","Cedar","Vetiver"],ex:"Santal 33, Vétiver"},
+ {n:"Mossy woods",g:"woody",d:"The chypre: bergamot over oakmoss and labdanum. Forest-floor elegance.",notes:["Oakmoss","Patchouli","Labdanum"],ex:"Mitsouko"}
+];
+
+const CLASSICS = [
+ {y:1882,n:"Fougère Royale",h:"Houbigant",nose:"Paul Parquet",fam:"aromatic",m:["coumarin","lavender"],w:"Built around synthetic coumarin, it founded the fougère family and helped open fine perfumery to aroma chemicals."},
+ {y:1889,n:"Jicky",h:"Guerlain",nose:"Aimé Guerlain",fam:"aromatic",m:["lavender","vanillin","coumarin"],w:"Lavender, citrus and a daring vanillic, animalic warmth. Often called the first modern perfume."},
+ {y:1917,n:"Chypre",h:"Coty",nose:"François Coty",fam:"woody",m:["bergamot","oakmoss","labdanum"],w:"Named a whole structure: bright citrus over a dark floor of oakmoss and labdanum."},
+ {y:1919,n:"Mitsouko",h:"Guerlain",nose:"Jacques Guerlain",fam:"woody",m:["oakmoss","bergamot"],w:"The great chypre, with a peach lactone (aldehyde C-14) glowing over moss. Still in production, reformulated."},
+ {y:1921,n:"Chanel No. 5",h:"Chanel",nose:"Ernest Beaux",fam:"aldehydic",m:["aldehydes","jasmine","rose"],w:"A generous dose of aldehydes made a floral abstract: no single flower, but a sparkling idea of one."},
+ {y:1925,n:"Shalimar",h:"Guerlain",nose:"Jacques Guerlain",fam:"amber",m:["vanillin","bergamot","benzoin"],w:"The archetypal amber: smoky vanilla under a big citrus top."},
+ {y:1955,n:"Pour Monsieur",h:"Chanel",nose:"Henri Robert",fam:"citrus",m:["bergamot","oakmoss"],w:"A quiet, citrusy chypre and a benchmark of restraint."},
+ {y:1966,n:"Eau Sauvage",h:"Dior",nose:"Edmond Roudnitska",fam:"citrus",m:["hedione","bergamot"],w:"The first prominent use of Hedione. Citrus made radiant, airy and modern."},
+ {y:1988,n:"Cool Water",h:"Davidoff",nose:"Pierre Bourdon",fam:"aromatic",m:["dhm","lavender"],w:"Dihydromyrcenol in overdose; it defined the fresh masculine for a decade."},
+ {y:1992,n:"Angel",h:"Mugler",nose:"Olivier Cresp",fam:"gourmand",m:["ethylmaltol","patchouli"],w:"Ethyl maltol and patchouli: the birth of the gourmand."},
+ {y:1992,n:"L'Eau d'Issey",h:"Issey Miyake",nose:"Jacques Cavallier",fam:"marine",m:["calone"],w:"Watery, transparent florals: the aquatic decade in one bottle."},
+ {y:2006,n:"Terre d'Hermès",h:"Hermès",nose:"Jean-Claude Ellena",fam:"woody",m:["isoesuper","vetiver"],w:"Orange, flint and woods built with Ellena's famous economy of materials."},
+ {y:2006,n:"Molecule 01",h:"Escentric Molecules",nose:"Geza Schoen",fam:"woody",m:["isoesuper"],w:"Essentially Iso E Super alone. It asked: what is a perfume, if not one material worn well?"},
+ {y:2011,n:"Santal 33",h:"Le Labo",nose:"Frank Voelkl",fam:"woody",m:["sandalwood","cedarwood"],w:"A dry, leathery sandalwood that became the scent of a generation of city dwellers."}
+];
+
+const LINEAGES = [
+ {h:"Chanel",l:["Ernest Beaux","Henri Robert","Jacques Polge","Olivier Polge (from 2015)"]},
+ {h:"Guerlain",l:["Aimé Guerlain","Jacques Guerlain","Jean-Paul Guerlain","Thierry Wasser (from 2008)"]},
+ {h:"Hermès",l:["Jean-Claude Ellena","Christine Nagel (from 2016)"]},
+ {h:"Dior",l:["François Demachy","Francis Kurkdjian (from 2021)"]}
+];
+
+const ATLAS = [
+ {p:"Grasse",r:"France",c:"43.66° N · 6.92° E",m:"Jasmine, May rose, tuberose",d:"Glove-makers turned perfumers. Its perfume know-how was added to UNESCO's intangible cultural heritage list in 2018."},
+ {p:"Calabria",r:"Italy",c:"38.10° N · 15.65° E",m:"Bergamot",d:"A narrow coastal strip that grows nearly all the world's bergamot."},
+ {p:"Kazanlak Rose Valley",r:"Bulgaria",c:"42.62° N · 25.39° E",m:"Rose otto",d:"Rosa damascena, picked at dawn in May and June and distilled the same day."},
+ {p:"Tuscany",r:"Italy",c:"43.77° N · 11.25° E",m:"Orris",d:"Iris pallida rhizomes are dug, peeled and left to age for years before distillation."},
+ {p:"Assam",r:"India",c:"26.14° N · 91.74° E",m:"Oud",d:"Agarwood trees whose heartwood darkens with resin after infection."},
+ {p:"Mysore",r:"India",c:"12.30° N · 76.64° E",m:"Sandalwood",d:"Once the most prized sandalwood on earth; wild stocks are now severely restricted."},
+ {p:"Dhofar",r:"Oman",c:"17.02° N · 54.09° E",m:"Frankincense",d:"Boswellia trees tapped for resin traded along the Incense Route for millennia."},
+ {p:"Madagascar",r:"",c:"18.77° S · 46.87° E",m:"Vanilla",d:"Most of the world's vanilla, each flower pollinated by hand."},
+ {p:"Haiti",r:"",c:"18.97° N · 72.29° W",m:"Vetiver",d:"The source of the smoothest, most sought-after vetiver oils."},
+ {p:"Sulawesi",r:"Indonesia",c:"1.84° S · 120.53° E",m:"Patchouli",d:"Smallholder farms supply most of the world's patchouli oil."}
+];
+
+const GLOSSARY = [
+ ["Absolute","A highly concentrated extract made by washing a concrete with alcohol. Used for delicate flowers that can't survive steam."],
+ ["Accord","A blend of materials that smells like something new, the way notes make a chord. Perfumes are built from accords."],
+ ["Aroma chemical","A single odorant, synthesised or isolated from nature. Hedione, Iso E Super and vanillin are examples."],
+ ["Blind buy","Buying a perfume without smelling it first."],
+ ["Concrete","The waxy solid left after extracting flowers with a solvent. It's washed with alcohol to make an absolute."],
+ ["Drydown","How a perfume settles once the volatile materials have gone. The part you live with."],
+ ["Enfleurage","A historic method: petals pressed into cold fat, replaced daily, to capture fragile scents like tuberose. Now almost extinct."],
+ ["Facet","One aspect of a material's smell. Vetiver has earthy, smoky and grapefruit facets."],
+ ["Fixative","A material that slows the evaporation of others, such as benzoin, musks and some resins."],
+ ["Flanker","A spin-off of a famous perfume: “Intense”, “Élixir”, “Summer”."],
+ ["Fraghead","What fragrance enthusiasts call themselves. Also “perfumista”."],
+ ["Headspace","A technique that captures the air around a living flower so a perfumer can analyse and recreate it."],
+ ["IFRA","The International Fragrance Association, whose standards restrict or ban materials for safety reasons."],
+ ["Mouillette","A paper smelling strip, also called a blotter."],
+ ["Nose","A professional perfumer (le nez). Training usually takes years of memorising materials."],
+ ["Organ","The perfumer's desk of materials, arranged in tiers like the pipes of a church organ."],
+ ["Projection","How far a scent radiates from your skin while you stand still."],
+ ["Reformulation","Changing a perfume's formula, often because of new IFRA rules or material costs."],
+ ["Sillage","The trail you leave in a room. French for the wake behind a boat."],
+ ["Soliflore","A perfume built to portray a single flower."],
+ ["Tenacity","How long a material or perfume lasts, often measured on a blotter."],
+ ["Volatility","How quickly a material evaporates. Top notes are simply the most volatile materials."]
+];
+/* ================= VAPOUR ENGINE ================= */
+const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* 2D gradient noise */
+const Noise = (()=>{
+  const perm=[...Array(256).keys()];
+  for(let i=255;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [perm[i],perm[j]]=[perm[j],perm[i]];}
+  const p=new Uint8Array(512); for(let i=0;i<512;i++) p[i]=perm[i&255];
+  const G=[[1,1],[-1,1],[1,-1],[-1,-1],[1,0],[-1,0],[0,1],[0,-1]];
+  const fade=t=>t*t*t*(t*(t*6-15)+10);
+  const dot=(h,x,y)=>{const g=G[h&7]; return g[0]*x+g[1]*y;};
+  return (x,y)=>{
+    const xi=Math.floor(x), yi=Math.floor(y), X=xi&255, Y=yi&255; x-=xi; y-=yi;
+    const u=fade(x), v=fade(y), a=p[X]+Y, b=p[X+1]+Y;
+    const l1=dot(p[a],x,y)+(dot(p[b],x-1,y)-dot(p[a],x,y))*u;
+    const l2=dot(p[a+1],x,y-1)+(dot(p[b+1],x-1,y-1)-dot(p[a+1],x,y-1))*u;
+    return l1+(l2-l1)*v;
+  };
+})();
+/* divergence-free flow: the curl of a two-octave noise field drifting in time */
+function curl(x,y,t){
+  const e=.02, n=(a,b)=>Noise(a+t*.06,b-t*.045)+.45*Noise(a*2.3-t*.03,b*2.3+t*.05);
+  return [(n(x,y+e)-n(x,y-e))/(2*e), -(n(x+e,y)-n(x-e,y))/(2*e)];
+}
+
+/* pre-rendered soft sprites, one per colour */
+const SPR={};
+function sprite(rgb,kind){
+  const key=rgb+kind; if(SPR[key]) return SPR[key];
+  const s=kind==='glint'?64:128, c=document.createElement('canvas'); c.width=c.height=s;
+  const x=c.getContext('2d'), g=x.createRadialGradient(s/2,s/2,0,s/2,s/2,s/2);
+  if(kind==='glint'){
+    g.addColorStop(0,'rgba(255,255,255,1)'); g.addColorStop(.08,'rgba(255,252,255,.95)');
+    g.addColorStop(.18,`rgba(${rgb},.55)`); g.addColorStop(.45,`rgba(${rgb},.12)`); g.addColorStop(1,`rgba(${rgb},0)`);
+  } else {
+    g.addColorStop(0,`rgba(${rgb},.42)`); g.addColorStop(.22,`rgba(${rgb},.26)`);
+    g.addColorStop(.5,`rgba(${rgb},.09)`); g.addColorStop(.78,`rgba(${rgb},.025)`); g.addColorStop(1,`rgba(${rgb},0)`);
+  }
+  x.fillStyle=g; x.fillRect(0,0,s,s); return SPR[key]=c;
+}
+
+/* Vapour: particles advected through the curl field, drawn additively with fading trails */
+function Vapor(canvas, host, opt){
+  const ctx=canvas.getContext('2d');
+  const o=Object.assign({max:1400, fade:.075, scale:.0026, flow:1, rise:.12, drag:.955, mistAlpha:.26, blend:'lighter', trail:true, tscale:1, seek:.012, twinkle:.21, grow:2.4, palette:()=>[["214,190,242",1]]}, opt);
+  let W=0,H=0,dpr=1, parts=[], run=false, vis=true; const t0=performance.now();
+  function resize(){
+    dpr=Math.min(2,window.devicePixelRatio||1); W=host.clientWidth; H=host.clientHeight;
+    canvas.width=Math.max(1,Math.round(W*dpr)); canvas.height=Math.max(1,Math.round(H*dpr)); ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  function pick(){ const pal=o.palette(); let tot=0; for(const q of pal) tot+=q[1]; let r=Math.random()*tot; for(const q of pal){ r-=q[1]; if(r<=0) return q[0]; } return pal[0][0]; }
+  function emit(x,y,{vx=0,vy=0,n=1,kind='mist',rgb,spread=6,life,size,tgt,free,a,jit=.5}={}){
+    for(let i=0;i<n;i++){
+      if(parts.length>=o.max) parts.shift();
+      const g=kind==='glint';
+      parts.push({x:x+(Math.random()-.5)*spread, y:y+(Math.random()-.5)*spread,
+        vx:vx+(Math.random()-.5)*jit, vy:vy+(Math.random()-.5)*jit, age:0, a,
+        life:life||(g?60+Math.random()*70:120+Math.random()*160),
+        s:size||(g?2.5+Math.random()*3.5:9+Math.random()*15), rgb:rgb||pick(), k:kind, tw:Math.random()*6.28, tgt, free});
+    }
+  }
+  function frame(now){
+    if(!run) return; requestAnimationFrame(frame); if(!vis) return;
+    const t=(now-t0)/1000; o.onFrame && o.onFrame(t, api);
+    if(o.trail){ ctx.globalCompositeOperation='destination-out'; ctx.fillStyle=`rgba(0,0,0,${o.fade})`; ctx.fillRect(0,0,W,H); } else ctx.clearRect(0,0,W,H);
+    if(o.onDraw){ ctx.globalCompositeOperation='source-over'; o.onDraw(ctx,t,api); }
+    ctx.globalCompositeOperation=o.blend;
+    for(let i=parts.length-1;i>=0;i--){
+      const p=parts[i]; p.age++;
+      if(p.age>p.life || p.x<-80 || p.x>W+80 || p.y<-120 || p.y>H+80){ parts.splice(i,1); continue; }
+      const [cx,cy]=curl(p.x*o.scale, p.y*o.scale, t*o.tscale);
+      let fx=0, fy=0; if(o.force){ const f=o.force(p,t); fx=f[0]; fy=f[1]; }
+      if(p.tgt){ fx+=(p.tgt[0]-p.x)*o.seek; fy+=(p.tgt[1]-p.y)*o.seek; }
+      p.vx=p.vx*o.drag + cx*o.flow*.085 + fx;
+      p.vy=p.vy*o.drag + cy*o.flow*.085 - o.rise*.02 + fy;
+      p.x+=p.vx; p.y+=p.vy;
+      const k=p.age/p.life, env=Math.pow(Math.sin(Math.PI*Math.min(1,k)),1.5), g=p.k==='glint';
+      const sz=g ? p.s*(1+.25*Math.sin(p.age*o.twinkle*1.3+p.tw)) : p.s*(1+k*o.grow);
+      ctx.globalAlpha = g ? env*(p.a||1)*(.55+.45*Math.sin(p.age*o.twinkle+p.tw)) : env*(p.a||1)*o.mistAlpha;
+      ctx.drawImage(sprite(p.rgb, g?'glint':'mist'), p.x-sz, p.y-sz, sz*2, sz*2);
+    }
+    ctx.globalAlpha=1; ctx.globalCompositeOperation='source-over';
+  }
+  function still(){
+    ctx.clearRect(0,0,W,H); if(o.onDraw) o.onDraw(ctx,0,api); ctx.globalCompositeOperation='lighter';
+    for(let i=0;i<8;i++){ const x=o.stillX?o.stillX():Math.random()*W, y=o.stillY?o.stillY():Math.random()*H; ctx.globalAlpha=.06; const s=60+Math.random()*60; ctx.drawImage(sprite(pick(),'mist'),x-s,y-s,s*2,s*2); }
+    for(let i=0;i<40;i++){ const x=o.stillX?o.stillX():Math.random()*W, y=o.stillY?o.stillY():Math.random()*H; ctx.globalAlpha=.3+Math.random()*.4; const s=3+Math.random()*4; ctx.drawImage(sprite(pick(),'glint'),x-s,y-s,s*2,s*2); }
+    ctx.globalAlpha=1; ctx.globalCompositeOperation='source-over';
+  }
+  const api={ emit, resize, opt:o,
+    get W(){return W}, get H(){return H}, get count(){return parts.length},
+    start(){ resize(); if(REDUCE){ still(); return; } if(!run){ run=true; requestAnimationFrame(frame);} },
+    stop(){ run=false; }, visible(v){ vis=v; }, clear(){ parts=[]; ctx.clearRect(0,0,W,H); } };
+  return api;
+}
+/* ================= APP ================= */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
+const fv=f=>`var(--f-${f})`;
+const GLOW={citrus:"232,218,130",floral:"244,164,198",aromatic:"176,212,146",aldehydic:"200,214,236",woody:"222,184,150",amber:"246,188,104",musk:"218,200,246",marine:"136,206,228",gourmand:"238,168,128",spicy:"240,146,126",animalic:"204,166,184"};
+function toast(msg){ const t=document.createElement('div'); t.className='toast'; t.setAttribute('role','status'); t.textContent=msg; document.body.appendChild(t); setTimeout(()=>t.remove(),2200); }
+
+/* ---------- time scales ---------- */
+function scale(knots){ return {
+  toH:v=>{for(let k=1;k<knots.length;k++){ if(v<=knots[k][0]){const[a0,h0]=knots[k-1],[a1,h1]=knots[k];return h0+(h1-h0)*(v-a0)/(a1-a0);} } return knots[knots.length-1][1];},
+  toV:h=>{for(let k=1;k<knots.length;k++){ if(h<=knots[k][1]){const[a0,h0]=knots[k-1],[a1,h1]=knots[k];return a0+(a1-a0)*(h-h0)/(h1-h0);} } return 1000;} }; }
+const SC8=scale([[0,0],[250,.25],[500,1],[750,3],[1000,8]]);
+const SC12=scale([[0,0],[200,.25],[400,1],[600,3],[800,6],[1000,12]]);
+const clockTxt=h=>{const m=Math.round(h*60); return Math.floor(m/60)+":"+String(m%60).padStart(2,'0');};
+const whenTxt=h=>{ if(h<1/60) return "At the spray"; const m=Math.round(h*60); if(m<60) return `After ${m} min`; const hh=Math.floor(m/60), r=m%60; return `After ${hh} h${r?` ${r} min`:''}`; };
+
+/* ---------- the teaching model ---------- */
+function snap(f,h){
+  const rows=Object.entries(f).filter(([id,p])=>p>0&&MAT[id]).map(([id,p])=>{const m=MAT[id]; return {id,m,p,v:p*m.imp*Math.exp(-h/TAU[m.ten])};});
+  const tot=rows.reduce((a,r)=>a+r.v,0)||1e-9; rows.forEach(r=>r.s=r.v/tot); return {rows,tot};
+}
+const PHASE=h=> h<.2?"The opening, the part shop testers are designed around." : h<1.2?"The volatile materials are lifting; the heart is surfacing." : h<4?"The heart: the perfume's real character." : h<8?"The drydown, sitting close to the skin." : "What lingers on a scarf the next morning.";
+
+/* ---------- Blotter component ---------- */
+function Blotter(el,{formula,title,sub,flat,start=80,onUpdate}){
+  const uid='t'+Math.random().toString(36).slice(2,8);
+  const ids=Object.keys(formula).filter(k=>formula[k]>0&&MAT[k]).sort((a,b)=>MAT[a].ten-MAT[b].ten||formula[b]-formula[a]);
+  const tierOf=t=>t<=2?"Volatile · met first":t<=4?"Middle":"Tenacious · what stays";
+  let rowsHtml='', last='';
+  ids.forEach(id=>{ const m=MAT[id], t=tierOf(m.ten); if(t!==last){rowsHtml+=`<div class="tier">${t}</div>`; last=t;}
+    rowsHtml+=`<div class="bar-row"><span class="nm">${esc(m.n)}</span><span class="tr"><i data-b="${id}" style="background:${fv(m.fam)}"></i></span><span class="pc" data-p="${id}"></span></div>`; });
+  el.classList.add('blotter'); if(flat) el.classList.add('flat');
+  el.innerHTML=`<div class="bl-top"><div><p class="label">${esc(sub)}</p><h3>${esc(title)}</h3></div><div class="clock"></div></div>
+    <div class="bars">${rowsHtml}</div>
+    <label class="label" for="${uid}">Time since spraying</label>
+    <input type="range" id="${uid}" min="0" max="1000" value="${start}">
+    <div class="ticks"><span>Spray</span><span>15 min</span><span>1 h</span><span>3 h</span><span>8 h</span></div>
+    <div class="bl-foot"><button class="btn small ghost" type="button" aria-pressed="false">Play the drydown</button><span class="strength">Strength <span class="tr"><i></i></span></span></div>
+    <p class="now" aria-live="polite"></p>`;
+  const range=$('input',el), clock=$('.clock',el), now=$('.now',el), str=$('.strength i',el), btn=$('.bl-foot button',el);
+  const base0=snap(formula,0).tot;
+  function update(){
+    const h=SC8.toH(+range.value), {rows,tot}=snap(formula,h), max=Math.max(...rows.map(r=>r.s));
+    rows.forEach(r=>{ $(`[data-b="${r.id}"]`,el).style.width=(r.s/max*100).toFixed(1)+'%'; $(`[data-p="${r.id}"]`,el).textContent=Math.round(r.s*100)+'%'; });
+    clock.textContent=clockTxt(h); str.style.width=(Math.sqrt(tot/base0)*100).toFixed(1)+'%';
+    const top=[...rows].sort((a,b)=>b.s-a.s).slice(0,3);
+    now.innerHTML=`Mostly <b>${top.map(r=>esc(r.m.n)).join(', ')}</b>: ${top.map(r=>r.m.d[0]).join(', ')}. ${PHASE(h)}`;
+    onUpdate && onUpdate(rows,h);
+  }
+  let playing=false, t0=0, v0=0;
+  function tick(ts){ if(!playing) return; if(!t0){t0=ts; v0=+range.value>=990?0:+range.value;} const v=Math.min(1000,v0+(ts-t0)/15); range.value=v; update(); if(v>=1000) stop(); else requestAnimationFrame(tick); }
+  function stop(){ playing=false; t0=0; btn.setAttribute('aria-pressed','false'); btn.textContent='Play the drydown'; }
+  btn.addEventListener('click',()=>{ if(playing){stop();return;} playing=true; btn.setAttribute('aria-pressed','true'); btn.textContent='Pause'; requestAnimationFrame(tick); });
+  range.addEventListener('input',update); range.addEventListener('pointerdown',()=>playing&&stop());
+  update(); return {update};
+}
+
+/* ---------- sigils & houses (ceremony data) ---------- */
+const H = {
+  H:{name:"Hespéridé",pron:"ess-pay-ree-day",c:"143,214,186",motto:"Light first.",traits:["Bright","Quick","Open-hearted"],hour:"Dawn",rival:"A",
+    lore:"Named for the Hesperides, the nymphs who guarded a garden of golden apples at the edge of the world. Its perfumes are sunlight pressed from citrus peel: bergamot, neroli, lemon.",
+    treasures:[["Acqua di Parma","Colonia"],["Hermès","Eau d'Orange Verte"],["Dior","Eau Sauvage"]],loves:["Bergamot","Neroli","Petitgrain","Hedione"],scorns:"Anything heavy, sticky or sweet. Hespéridé believes a scent should leave when you do."},
+  F:{name:"Floral",pron:"flo-ral",c:"244,164,198",motto:"Bloom without apology.",traits:["Romantic","Generous","Curious"],hour:"Golden afternoon",rival:"B",
+    lore:"The oldest and largest family, with a thousand roses and a thousand jasmines, and a lifetime of arguments about which is best.",
+    treasures:[["Diptyque","Do Son"],["Frédéric Malle","Portrait of a Lady"],["Kannauj","Gulab attar"]],loves:["Rose","Jasmine","Tuberose","Orris"],scorns:"Dry smoke and bare wood. To a Floral, a perfume without petals is a house without windows."},
+  Fo:{name:"Fougère",pron:"foo-zhair",c:"176,212,146",motto:"Clean hands, steady heart.",traits:["Loyal","Grounded","Unfussy"],hour:"Early morning",rival:"C",
+    lore:"French for “fern,” though ferns barely smell. Its founders imagined a forest instead: lavender and herbs over coumarin and moss. Born in 1882, it still rules every barbershop on earth.",
+    treasures:[["Houbigant","Fougère Royale"],["Guerlain","Jicky"],["Azzaro","Pour Homme"]],loves:["Lavender","Coumarin","Geranium","Oakmoss"],scorns:"Mystery for its own sake. Fougère finds Chypre's shadows a little theatrical."},
+  C:{name:"Chypre",pron:"sheep-ruh",c:"216,196,132",motto:"Beauty lives in shadow.",traits:["Elegant","Enigmatic","Exacting"],hour:"Dusk",rival:"Fo",
+    lore:"Named for the island of Cyprus, and for François Coty's perfume of 1917: bright bergamot over a dark floor of oakmoss and labdanum. Its members chase old bottles like treasure maps.",
+    treasures:[["Guerlain","Mitsouko"],["Chanel","Pour Monsieur"],["Coty","Chypre"]],loves:["Oakmoss","Bergamot","Patchouli","Labdanum"],scorns:"Anything that smells simply “clean.” To a Chypre, soap is not a personality."},
+  B:{name:"Boisé",pron:"bwah-zay",c:"222,184,150",motto:"Roots before branches.",traits:["Quiet","Patient","Deep"],hour:"Deep night",rival:"F",
+    lore:"The house of woods: cedar's pencil shavings, sandalwood's cream, vetiver's roots, and oud, the darkened heartwood of the agar tree. Its perfumes don't shout; they last.",
+    treasures:[["Hermès","Terre d'Hermès"],["Le Labo","Santal 33"],["Kannauj","Mitti attar"]],loves:["Sandalwood","Vetiver","Cedarwood","Iso E Super"],scorns:"Big, sugary florals. Boisé would rather smell like a forest than a bouquet."},
+  A:{name:"Ambré",pron:"ahm-bray",c:"246,188,104",motto:"Keep the fire lit.",traits:["Warm","Bold","Magnetic"],hour:"Candlelight",rival:"H",
+    lore:"Not the fossil, but an old perfumer's accord of labdanum, benzoin and vanilla. The house of the gourmands too: perfumes that smell of caramel and warm skin.",
+    treasures:[["Guerlain","Shalimar"],["Mugler","Angel"],["Maison Margiela","By the Fireplace"]],loves:["Labdanum","Benzoin","Vanillin","Tonka bean"],scorns:"Thin, sharp citrus. Ambré thinks a perfume that fades by lunch was never really there."}
+};
+const HORDER=["H","F","Fo","C","B","A"];
+function sigil(k,size){
+  const s=size||120, c=`rgb(${H[k].c})`, g=[];
+  const ring=`<circle cx="60" cy="60" r="54" fill="none" stroke="${c}" stroke-width="1.2" opacity=".55"/><circle cx="60" cy="60" r="48" fill="none" stroke="${c}" stroke-width=".6" opacity=".35"/>`;
+  if(k==="H"){ g.push(`<circle cx="60" cy="60" r="14" fill="none" stroke="${c}" stroke-width="1.6"/>`); for(let i=0;i<12;i++){const a=i*Math.PI/6,r1=20,r2=i%2?30:36; g.push(`<line x1="${(60+r1*Math.cos(a)).toFixed(2)}" y1="${(60+r1*Math.sin(a)).toFixed(2)}" x2="${(60+r2*Math.cos(a)).toFixed(2)}" y2="${(60+r2*Math.sin(a)).toFixed(2)}" stroke="${c}" stroke-width="1.4" stroke-linecap="round"/>`);} }
+  if(k==="F"){ for(let i=0;i<5;i++) g.push(`<ellipse cx="60" cy="42" rx="8" ry="17" fill="none" stroke="${c}" stroke-width="1.4" transform="rotate(${i*72} 60 60)"/>`); g.push(`<circle cx="60" cy="60" r="4" fill="${c}"/>`); }
+  if(k==="Fo"){ g.push(`<path d="M60 96 C60 70 60 44 60 24" fill="none" stroke="${c}" stroke-width="1.6" stroke-linecap="round"/>`); for(let i=0;i<6;i++){const y=34+i*10,l=20-i*2.2; g.push(`<path d="M60 ${y+6} Q${60-l*.6} ${y} ${60-l} ${y-4}" fill="none" stroke="${c}" stroke-width="1.3" stroke-linecap="round"/><path d="M60 ${y+6} Q${60+l*.6} ${y} ${60+l} ${y-4}" fill="none" stroke="${c}" stroke-width="1.3" stroke-linecap="round"/>`);} }
+  if(k==="C"){ g.push(`<path d="M72 30 A32 32 0 1 0 72 90 A26 26 0 1 1 72 30 Z" fill="none" stroke="${c}" stroke-width="1.6"/>`); [[80,46],[86,60],[80,74]].forEach(([x,y])=>g.push(`<circle cx="${x}" cy="${y}" r="2.2" fill="${c}"/>`)); }
+  if(k==="B"){ [34,26,19,12,6].forEach((r,i)=>g.push(`<ellipse cx="${60+i*1.2}" cy="${60-i*.8}" rx="${r}" ry="${(r*.92).toFixed(2)}" fill="none" stroke="${c}" stroke-width="1.3"/>`)); g.push(`<line x1="60" y1="60" x2="92" y2="46" stroke="${c}" stroke-width="1.1"/>`); }
+  if(k==="A"){ g.push(`<path d="M60 26 C72 44 82 54 78 72 C75 86 66 92 60 92 C50 92 42 84 42 72 C42 60 50 54 54 44 C56 54 60 58 64 58 C66 48 64 38 60 26 Z" fill="none" stroke="${c}" stroke-width="1.6" stroke-linejoin="round"/>`); }
+  return `<svg viewBox="0 0 120 120" width="${s}" height="${s}" aria-hidden="true">${ring}${g.join('')}</svg>`;
+}
+
+/* ---------- Material sheet ---------- */
+let lastFocus=null;
+function openMaterial(id){
+  const m=MAT[id]; if(!m) return; lastFocus=document.activeElement;
+  const inClassics=CLASSICS.filter(c=>c.m.includes(id));
+  const pips=(n,max)=>`<span class="meter">${Array.from({length:max},(_,i)=>`<i class="${i<n?'f':''}"></i>`).join('')}</span>`;
+  $('#sheetRoot').innerHTML=`<div class="scrim" data-close></div>
+   <aside class="sheet" role="dialog" aria-modal="true" aria-labelledby="shT" tabindex="-1">
+    <button class="close" type="button" data-close aria-label="Close">×</button>
+    <div class="chips"><span class="chip"><span class="dot" style="background:${fv(m.fam)}"></span>${FAMS[m.fam].n}</span><span class="tag ${m.t==='synthetic'?'syn':''}">${m.t==='synthetic'?'Aroma chemical':'Natural'}</span></div>
+    <h2 id="shT">${esc(m.n)}</h2>
+    <p class="desc">${m.d.join(', ')}</p>
+    <dl>
+      <dt>Origin</dt><dd>${esc(m.src)}</dd>
+      ${m.cas?`<dt>CAS</dt><dd style="font-variant-numeric:tabular-nums">${m.cas}</dd>`:''}
+      ${m.yr?`<dt>Introduced</dt><dd>${m.yr}</dd>`:''}
+      <dt>Tenacity</dt><dd>${pips(m.ten,6)} <span class="muted" style="font-size:12.5px">${TEN_WORD[m.ten]}</span></dd>
+      <dt>Impact</dt><dd>${pips(m.imp,10)}</dd>
+      <dt>Smell it in</dt><dd>${esc(m.inn)}</dd>
+    </dl>
+    <div class="note"><b>Perfumer's note</b>${esc(m.note)}</div>
+    ${inClassics.length?`<p class="label" style="margin-top:26px">In the classics</p><div class="chips" style="margin-top:10px">${inClassics.map(c=>`<span class="chip">${esc(c.n)} · ${c.y}</span>`).join('')}</div>`:''}
+    <div class="actions">${LAB_IDS.includes(id)?`<button class="btn small" type="button" id="toLab">Use in the lab</button>`:''}<button class="btn small ghost" type="button" data-close>Close</button></div>
+   </aside>`;
+  const sh=$('.sheet'); sh.focus();
+  $$('[data-close]',$('#sheetRoot')).forEach(b=>b.addEventListener('click',closeSheet));
+  const tl=$('#toLab'); if(tl) tl.addEventListener('click',()=>{ LAB.add(id); closeSheet(); go('lab'); toast(`${m.n} added to your formula`); });
+}
+function closeSheet(){ $('#sheetRoot').innerHTML=''; if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && $('#sheetRoot').innerHTML) closeSheet(); });
+
+/* ---------- Wheel ---------- */
+function Wheel(svg,card,sel=4){
+  const GC={fresh:"aromatic",floral:"floral",amber:"amber",woody:"woody"};
+  const cx=200,cy=200,R=186,r=94, step=2*Math.PI/WHEEL.length, pt=(a,rad)=>[cx+rad*Math.cos(a),cy+rad*Math.sin(a)];
+  function draw(){
+    let s="";
+    WHEEL.forEach((f,i)=>{
+      const a0=-Math.PI/2+i*step+.012, a1=a0+step-.024;
+      const [x0,y0]=pt(a0,R),[x1,y1]=pt(a1,R),[x2,y2]=pt(a1,r),[x3,y3]=pt(a0,r);
+      s+=`<path class="seg" data-i="${i}" tabindex="0" role="button" aria-label="${f.n}" aria-pressed="${i===sel}" d="M${x0},${y0} A${R},${R} 0 0 1 ${x1},${y1} L${x2},${y2} A${r},${r} 0 0 0 ${x3},${y3} Z" style="fill:${fv(GC[f.g])}" opacity="${i===sel?1:.34}"/>`;
+      const am=(a0+a1)/2, [lx,ly]=pt(am,(R+r)/2); let deg=am*180/Math.PI; if(deg>90&&deg<270) deg-=180; if(deg>90) deg-=180;
+      s+=`<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" transform="rotate(${deg.toFixed(1)} ${lx.toFixed(1)} ${ly.toFixed(1)})" text-anchor="middle" dominant-baseline="middle" font-family="Jost,Futura,sans-serif" font-size="10.5" letter-spacing="1.2" style="fill:${i===sel?'var(--paper)':'var(--ink)'}" pointer-events="none">${f.n.toUpperCase()}</text>`;
+    });
+    s+=`<circle cx="${cx}" cy="${cy}" r="${r-8}" style="fill:var(--paper);stroke:var(--line)"/>`;
+    s+=`<text x="${cx}" y="${cy-4}" text-anchor="middle" font-family="Bodoni Moda,Didot,serif" font-style="italic" font-size="30" style="fill:var(--ink)">${WHEEL[sel].n}</text>`;
+    s+=`<text x="${cx}" y="${cy+22}" text-anchor="middle" font-family="Jost,Futura,sans-serif" font-size="10" letter-spacing="2.5" style="fill:var(--ink-3)">${String(sel+1).padStart(2,'0')} / 12</text>`;
+    svg.innerHTML=s;
+    const f=WHEEL[sel], grp={fresh:"Fresh",floral:"Floral",amber:"Amber",woody:"Woody"}[f.g];
+    card.innerHTML=`<p class="label">${grp} group</p><h3>${f.n}</h3><p>${f.d}</p><div class="chips" style="margin-top:18px">${f.notes.map(n=>`<span class="chip">${n}</span>`).join('')}</div><p class="ex"><span class="small-caps">Smell it in</span><br><span style="font-family:var(--display);font-size:20px">${f.ex}</span></p>`;
+  }
+  svg.addEventListener('click',e=>{const p=e.target.closest('.seg'); if(p){sel=+p.dataset.i; draw();}});
+  svg.addEventListener('keydown',e=>{const p=e.target.closest('.seg'); if(p&&(e.key==='Enter'||e.key===' ')){e.preventDefault(); sel=+p.dataset.i; draw(); svg.querySelector(`[data-i="${sel}"]`).focus();}});
+  draw();
+}
+
+/* ---------- Lessons ---------- */
+const LESSONS=[
+ {t:"What a note really is",min:8,kind:"Read · interactive",sum:"Notes are impressions, not ingredients. Meet the difference between a note and a material.",
+  body:()=>`<p>When a perfume box lists <b>rose, pink pepper and sandalwood</b>, it is describing impressions, not ingredients. A <b>note</b> is what something smells like. A <b>material</b> is what's actually in the bottle.</p>
+  <p>Some notes are a single molecule. The sea-spray note of many 1990s perfumes owes most of its character to one aroma chemical, Calone. Other notes are crowds: rose oil holds hundreds of compounds, yet a handful do most of the talking.</p>
+  <div class="interactive"><span class="label">Take a rose apart</span>
+    <div class="rose-head"><span>Compound</span><span>Amount</span><span>Impact</span></div>
+    ${ROSE.map(c=>`<div class="rose-row"><span style="font-family:var(--display);font-size:17px">${c.n}</span><span class="pips amt">${[1,2,3].map(i=>`<i class="${i<=c.amt?'f':''}"></i>`).join('')}</span><span class="pips imp">${[1,2,3,4,5].map(i=>`<i class="${i<=c.imp?'f':''}"></i>`).join('')}</span><span class="d">${c.d}</span></div>`).join('')}
+    <p class="fine" style="margin-top:14px">The major compounds by volume smell only softly of rose. Two traces, rose oxide and β-damascenone, have enormous impact: without them, rose smells flat, like soap.</p>
+  </div>
+  <h2>Amount is not impact</h2>
+  <p>Every odorant has an <b>odour threshold</b>, the smallest amount your nose can detect. Some register at parts per trillion; others need vastly more. That's why perfumers talk about a material's <b>impact</b>, and why the biggest numbers in a formula are rarely its loudest voices.</p>
+  <p class="pull">Read a note list as a mood board, not a recipe.</p>`},
+ {t:"The pyramid and the drydown",min:10,kind:"Interactive",sum:"Why the first spray lies to you, and how perfumers really think about time.",
+  body:()=>`<p>Perfume adverts draw a pyramid: <b>top notes</b> for the first minutes, <b>heart notes</b> for the next hours, <b>base notes</b> for what remains. It's a helpful first map, but it isn't how perfumers think.</p>
+  <p>Perfumers think in <b>volatility</b>, how quickly a material evaporates, and <b>tenacity</b>, how long it lasts on a blotter. Every material in the formula is on your skin from the first second. The slow ones are there at minute one; they're simply drowned out by brighter, faster ones. As those lift away, the slower materials surface.</p>
+  <div class="interactive"><span class="label">Watch it happen</span><div id="lessonBlotter"></div>
+    <p class="fine" style="margin-top:14px">Bars show each material's share of what you smell, in a simple teaching model: amount × impact, fading at a rate set by tenacity. Notice that the tenacious materials are present from the very start.</p></div>
+  <h2>What this means for you</h2>
+  <p>Never judge a perfume on the first spray. The opening is often built to seduce in a shop; the drydown is what you'll live with. Wait fifteen minutes at least, an hour if you can.</p>
+  <p>Skin matters too. Warmth, oiliness and hydration change how quickly materials evaporate, which is one reason the same perfume can smell different on a friend.</p>
+  <p class="pull">The first spray is a greeting. The drydown is the conversation.</p>`,
+  mount:()=>Blotter($('#lessonBlotter'),{formula:PRESETS[0].f,title:"On the blotter",sub:"Study No. 1",flat:true,start:0})},
+ {t:"The families",min:12,kind:"The wheel",sum:"Fresh, floral, amber, woody: learn the map before the territory.",
+  body:()=>`<p>Perfumers and fragrance lovers group scents into families. The best-known map is the Fragrance Wheel, created by Michael Edwards in 1983. Neighbours on the wheel blend easily; opposites contrast.</p>
+  <div class="interactive"><span class="label">Explore the wheel</span><div class="wheel-grid"><div class="wheel-box"><svg id="lwSvg" viewBox="0 0 400 400" role="img" aria-label="Fragrance wheel"></svg></div><div class="fam-card" id="lwCard" aria-live="polite"></div></div></div>
+  <p>The wheel is a map, not a law. Many great perfumes sit between families: Shalimar is an amber that opens with a burst of bergamot; Terre d'Hermès is woody but begins with orange.</p>
+  <h2>Two structures to know by name</h2>
+  <p><b>Fougère</b>: lavender and coumarin over oakmoss, named after Houbigant's Fougère Royale of 1882. <b>Chypre</b>: bergamot over labdanum, oakmoss and patchouli, named after Coty's Chypre of 1917. You can build both in the Lab and watch how they wear.</p>
+  <p><a class="btn ghost small" href="#lab">Open the lab</a></p>`,
+  mount:()=>Wheel($('#lwSvg'),$('#lwCard'),2)},
+ {t:"Reading a label",min:6,kind:"Read · calculator",sum:"Cologne, EDT, EDP, extrait: what the words say, and what they don't.",
+  body:()=>`<p>The words on the bottle describe <b>concentration</b>: how much perfume concentrate is dissolved in alcohol. There is no legal standard and houses vary, but these ranges are typical.</p>
+  <div class="interactive"><span class="label">Typical concentrations</span>
+    <div style="overflow-x:auto"><table class="conc-table"><thead><tr><th>Name</th><th>Concentrate</th><th style="width:40%">Range</th></tr></thead><tbody>
+    ${CONC.map(c=>`<tr><td>${c.n}</td><td style="font-variant-numeric:tabular-nums">${c.lo}–${c.hi}%</td><td><span class="conc-bar" style="display:block"><i style="left:${c.lo/30*100}%;width:${(c.hi-c.lo)/30*100}%"></i></span></td></tr>`).join('')}
+    </tbody></table></div>
+    <div class="calc"><label class="small-caps" for="cType">In a</label><select id="cSize"><option>30</option><option selected>50</option><option>100</option></select><span class="small-caps">ml bottle of</span><select id="cType" aria-label="Concentration">${CONC.map((c,i)=>`<option value="${i}" ${i===2?'selected':''}>${c.n}</option>`).join('')}</select></div>
+    <p class="calc-out" id="cOut"></p>
+  </div>
+  <p>Concentration isn't the same as strength. An eau de toilette built on powerful woody-ambers can outlast a delicate floral eau de parfum. Flankers labelled “Intense” or “Parfum” are often reworked formulas, not simply stronger versions.</p>
+  <h2>What labels don't tell you</h2>
+  <p>Note lists are chosen by marketing as much as by the perfumer. Formulas also change over time, often when <b>IFRA</b> standards restrict a material such as oakmoss. Fragheads compare batches, and you'll hear them talk about “vintage” versus “current” formulations.</p>`,
+  mount:()=>{ const f=()=>{const c=CONC[+$('#cType').value], s=+$('#cSize').value; $('#cOut').textContent=`About ${(s*c.lo/100).toFixed(1)}–${(s*c.hi/100).toFixed(1)} ml of perfume concentrate; the rest is mostly alcohol.`;}; $('#cType').onchange=f; $('#cSize').onchange=f; f(); }},
+ {t:"Training your nose",min:15,kind:"Hands-on",sum:"Six spices, six molecules: your first real smell vocabulary.",
+  body:()=>`<p>Perfumers train by smelling materials one at a time and fixing a word to each, over and over. You can start the same way with your spice rack.</p>
+  <div class="interactive"><span class="label">The kitchen organ</span><div class="kit" id="kit"></div><p class="small-caps" id="kitProg" style="margin-top:14px"></p></div>
+  <h2>A method, not a talent</h2>
+  <ol class="steps-list">
+    <li><span><b>Smell briefly.</b> Two or three short sniffs, then step away. Long inhales tire your nose.</span></li>
+    <li><span><b>Name three things.</b> A family (woody? citrus?), a texture (sharp, creamy, dusty) and a memory.</span></li>
+    <li><span><b>Write it down.</b> Words are how smells stick. The Journal is here for exactly this.</span></li>
+    <li><span><b>Test yourself blind.</b> Ask a friend to hand you the jars while your eyes are closed.</span></li>
+  </ol>
+  <p class="pull">Most noses are better than their owners think. What they lack is vocabulary.</p>`,
+  mount:()=>{ const done=store.get('sillage-kit',[]); const kit=$('#kit');
+    kit.innerHTML=KITCHEN.map((k,i)=>`<div class="k ${done[i]?'done':''}"><label for="kc${i}"><input type="checkbox" id="kc${i}" ${done[i]?'checked':''}>${k.n}</label><span class="m">${k.m}</span><p>${k.d}</p></div>`).join('');
+    const upd=()=>{ const d=KITCHEN.map((_,i)=>$('#kc'+i).checked); d.forEach((v,i)=>$('#kc'+i).closest('.k').classList.toggle('done',v)); store.set('sillage-kit',d); const c=d.filter(Boolean).length; $('#kitProg').textContent=c===6?"All six smelled. You now know six molecules by nose.":`${c} of 6 smelled`; };
+    kit.addEventListener('change',upd); upd(); }},
+ {t:"Your first sampling session",min:10,kind:"Guide",sum:"How professionals evaluate, adapted for a Saturday afternoon.",
+  body:()=>`<p>A perfume counter is designed to overwhelm you. Here is how professionals evaluate, adapted for a Saturday afternoon.</p>
+  <ol class="steps-list">
+    <li><span><b>Arrive unscented.</b> No perfume or scented lotion, and nothing strong on your breath.</span></li>
+    <li><span><b>Start on paper.</b> Spray a smelling strip (a mouillette), write the name on it, wait ten seconds for the alcohol to lift, then smell.</span></li>
+    <li><span><b>Stop at four.</b> Your nose adapts quickly to what it smells; after three or four scents they begin to blur.</span></li>
+    <li><span><b>Reset with air.</b> Step outside or smell the inside of your own elbow. There's little evidence that coffee beans work any better.</span></li>
+    <li><span><b>Choose one or two for skin.</b> One per wrist. Smell again at ten minutes, one hour and four hours.</span></li>
+    <li><span><b>Live with it before buying.</b> Ask for a sample or buy a small decant, and wear it for a whole day. A perfume is decided in the drydown.</span></li>
+  </ol>
+  <p>Log each one in your Journal with its family and three words. After a dozen entries, you'll start to see your own taste.</p>
+  <p><a class="btn ghost small" href="#journal">Open the journal</a></p>`}
+];
+const done=()=>store.get('sillage-done',[]);
+function lessonCards(el){
+  const d=done();
+  el.innerHTML=LESSONS.map((l,i)=>`<a class="card lesson-card" href="#lesson-${i+1}"><span class="num">${i+1}</span><h3>${l.t}</h3><p>${l.sum}</p><span class="meta"><span class="small-caps">${l.min} min · ${l.kind}</span>${d.includes(i+1)?'<span class="done-mark">✓ Learned</span>':''}</span></a>`).join('');
+}
+function progress(){
+  const d=done(), n=d.length, next=[1,2,3,4,5,6].find(i=>!d.includes(i))||1, txt=n===6?"Course complete":`${n} of 6 lessons learned`;
+  [['#progText','#progBar'],['#progText2','#progBar2']].forEach(([t,b])=>{ $(t).textContent=txt; $(b).style.width=(n/6*100)+'%'; });
+  $('#progNext').href=`#lesson-${next}`; $('#progNext').textContent=n===0?"Start":n===6?"Review":"Continue";
+  lessonCards($('#lessonCards')); lessonCards($('#lessonCards2'));
+}
+function renderLesson(n){
+  const l=LESSONS[n-1], d=done();
+  $('#lessonWrap').innerHTML=`<div class="lesson"><article>
+    <p class="label">Lesson ${n} of 6 · ${l.min} min</p>
+    <h1>${l.t}</h1>
+    ${l.body()}
+    <div class="lesson-foot">${n>1?`<a class="linkish" href="#lesson-${n-1}">← ${LESSONS[n-2].t}</a>`:'<span></span>'}
+      <button class="btn" type="button" id="learned">${d.includes(n)?'Learned ✓':'Mark as learned'}</button>
+      ${n<6?`<a class="linkish" href="#lesson-${n+1}">${LESSONS[n].t} →</a>`:`<a class="linkish" href="#organ">Open the organ →</a>`}</div>
+  </article>
+  <nav class="toc" aria-label="Lessons">${LESSONS.map((x,i)=>`<a href="#lesson-${i+1}" class="${d.includes(i+1)?'done':''}" ${i+1===n?'aria-current="page"':''}><span>${d.includes(i+1)?'✓':i+1}</span>${x.t}</a>`).join('')}</nav></div>`;
+  l.mount && l.mount();
+  $('#learned').addEventListener('click',()=>{ const d2=done(); if(!d2.includes(n)){d2.push(n); store.set('sillage-done',d2);} progress(); toast(n<6?`Lesson ${n} learned`:"Course complete"); if(n<6) go(`lesson-${n+1}`); else renderLesson(n); });
+}
+
+/* ---------- Organ ---------- */
+const ORGAN={q:"",fam:"all",type:"all"};
+function renderOrgan(){
+  const fams=Object.keys(FAMS).filter(f=>MATERIALS.some(m=>m.fam===f));
+  $('#organType').innerHTML=[["all","All materials"],["natural","Naturals"],["synthetic","Aroma chemicals"]].map(([k,n])=>`<button type="button" class="chip" data-type="${k}" aria-pressed="${ORGAN.type===k}">${n}</button>`).join('');
+  $('#organFam').innerHTML=`<button type="button" class="chip" data-fam="all" aria-pressed="${ORGAN.fam==='all'}">Every family</button>`+fams.map(f=>`<button type="button" class="chip" data-fam="${f}" aria-pressed="${ORGAN.fam===f}"><span class="dot" style="background:${fv(f)}"></span>${FAMS[f].n}</button>`).join('');
+  const q=ORGAN.q.toLowerCase().trim();
+  const list=MATERIALS.filter(m=>(ORGAN.type==='all'||m.t===ORGAN.type)&&(ORGAN.fam==='all'||m.fam===ORGAN.fam)&&(!q||[m.n,m.d.join(' '),m.inn,m.src,FAMS[m.fam].n].join(' ').toLowerCase().includes(q)));
+  $('#organGrid').innerHTML=list.length?list.map(m=>`<button type="button" class="mat" data-id="${m.id}">
+    <span class="top"><span class="chip" style="padding:4px 10px"><span class="dot" style="background:${fv(m.fam)}"></span>${FAMS[m.fam].n}</span><span class="tag ${m.t==='synthetic'?'syn':''}">${m.t==='synthetic'?'Aroma chemical':'Natural'}</span></span>
+    <h3>${esc(m.n)}</h3><span class="desc">${m.d.slice(0,3).join(', ')}</span>
+    <span class="meters"><span>Tenacity</span><span class="meter">${[1,2,3,4,5,6].map(i=>`<i class="${i<=m.ten?'f':''}"></i>`).join('')}</span><span>Impact</span><span class="meter">${[1,2,3,4,5,6,7,8,9,10].map(i=>`<i class="${i<=m.imp?'f':''}"></i>`).join('')}</span></span>
+  </button>`).join(''):`<p class="empty">No materials match “${esc(ORGAN.q)}”. Try a smell, like “smoky” or “powdery”.</p>`;
+}
+$('#organType').addEventListener('click',e=>{const b=e.target.closest('[data-type]'); if(b){ORGAN.type=b.dataset.type; renderOrgan();}});
+$('#organFam').addEventListener('click',e=>{const b=e.target.closest('[data-fam]'); if(b){ORGAN.fam=b.dataset.fam; renderOrgan();}});
+$('#organQ').addEventListener('input',e=>{ORGAN.q=e.target.value; renderOrgan();});
+$('#organGrid').addEventListener('click',e=>{const b=e.target.closest('.mat'); if(b) openMaterial(b.dataset.id);});
+
+/* ---------- Lab ---------- */
+const LAB=(()=>{
+  let st=store.get('sillage-lab',null) || {name:PRESETS[1].n,f:{...PRESETS[1].f},v:400,conc:2,ml:50};
+  const save=()=>store.set('sillage-lab',st);
+  const ids=()=>Object.keys(st.f).sort((a,b)=>MAT[a].ten-MAT[b].ten||st.f[b]-st.f[a]);
+  function renderPresets(){ $('#presets').innerHTML=PRESETS.map(p=>`<button type="button" class="chip" data-p="${p.id}" aria-pressed="${st.name===p.n}" title="${esc(p.d)}">${p.n}</button>`).join(''); }
+  function renderFormula(){
+    const tot=Object.values(st.f).reduce((a,b)=>a+b,0)||1;
+    const avail=LAB_IDS.filter(id=>!(id in st.f));
+    $('#formula').innerHTML=`<div class="f-head"><div><p class="label">Formula</p><h3>${esc(st.name)}</h3></div><span class="small-caps">Parts per ${tot===1000?'thousand':'total'}</span></div>
+      <div class="f-cols"><span>Material</span><span class="sl">Parts</span><span></span><span style="text-align:right">%</span><span></span></div>
+      ${ids().map(id=>{const m=MAT[id]; return `<div class="f-row"><span class="nm"><span class="dot" style="background:${fv(m.fam)}"></span><button type="button" data-open="${id}">${esc(m.n)}</button></span>
+        <input type="range" min="0" max="500" step="5" value="${st.f[id]}" data-r="${id}" aria-label="${esc(m.n)} parts">
+        <input type="number" min="0" max="1000" step="1" value="${st.f[id]}" data-n="${id}" aria-label="${esc(m.n)} parts, number">
+        <span class="pct">${(st.f[id]/tot*100).toFixed(1)}</span>
+        <button type="button" class="rm" data-rm="${id}" aria-label="Remove ${esc(m.n)}">×</button></div>`;}).join('')}
+      <div class="f-foot"><span class="tot">Total ${tot} parts · ${ids().length} materials</span>
+        <span style="display:flex;gap:8px;flex-wrap:wrap"><select id="addMat" aria-label="Add a material"><option value="">Add a material…</option>${avail.map(id=>`<option value="${id}">${esc(MAT[id].n)}</option>`).join('')}</select>
+        <button type="button" class="btn small ghost" id="norm" ${tot===1000?'disabled style="opacity:.4"':''}>Scale to 1000</button></span></div>`;
+  }
+  function renderDilute(){
+    const tot=Object.values(st.f).reduce((a,b)=>a+b,0)||1, c=CONC[st.conc];
+    const byFam={}; Object.entries(st.f).forEach(([id,p])=>{const f=MAT[id].fam; byFam[f]=(byFam[f]||0)+p;});
+    const famRows=Object.entries(byFam).sort((a,b)=>b[1]-a[1]);
+    $('#dilute').innerHTML=`<p class="label">Balance by family</p>
+      <div class="fam-bal">${famRows.map(([f,p])=>`<span style="width:${p/tot*100}%;background:${fv(f)}" title="${FAMS[f].n}"></span>`).join('')}</div>
+      <div class="fam-legend">${famRows.map(([f,p])=>`<span><span class="dot" style="background:${fv(f)}"></span>${FAMS[f].n} ${Math.round(p/tot*100)}%</span>`).join('')}</div>
+      <div class="dilute"><label class="small-caps" style="display:grid;gap:6px">Concentration<select id="dConc">${CONC.map((x,i)=>`<option value="${i}" ${i===st.conc?'selected':''}>${x.n} · ${x.lo}–${x.hi}%</option>`).join('')}</select></label>
+      <label class="small-caps" style="display:grid;gap:6px">Bottle<select id="dMl">${[30,50,100].map(v=>`<option ${v===st.ml?'selected':''}>${v}</option>`).join('')}</select></label>
+      <p class="out">${(st.ml*c.lo/100).toFixed(1)}–${(st.ml*c.hi/100).toFixed(1)} ml of this formula in a ${st.ml} ml bottle</p></div>`;
+  }
+  function renderChart(){
+    const W=640,Hh=270,L=40,R=12,T=16,B=34,pw=W-L-R,ph=Hh-T-B, N=90;
+    const order=ids().slice().sort((a,b)=>MAT[b].ten-MAT[a].ten);
+    const X=v=>L+pw*v/1000, Y=s=>T+ph*(1-s);
+    const samples=[]; for(let i=0;i<=N;i++){ const v=i/N*1000, h=SC12.toH(v), sn=snap(st.f,h); const m={}; sn.rows.forEach(r=>m[r.id]=r.s); samples.push({v,h,m,tot:sn.tot}); }
+    const tot0=samples[0].tot||1;
+    let s=`<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Share of each material in the smell over twelve hours">`;
+    [0,.5,1].forEach(y=>{ s+=`<line x1="${L}" x2="${W-R}" y1="${Y(y)}" y2="${Y(y)}" style="stroke:var(--line)" stroke-width="1"/><text x="${L-8}" y="${Y(y)+3.5}" text-anchor="end" font-family="Jost,Futura,sans-serif" font-size="10" style="fill:var(--ink-3)">${y*100}%</text>`; });
+    const cum=samples.map(()=>0), famCount={};
+    order.forEach(id=>{
+      const m=MAT[id]; famCount[m.fam]=(famCount[m.fam]||0)+1; const op=[.95,.72,.52,.36][Math.min(3,famCount[m.fam]-1)];
+      const lo=samples.map((sm,i)=>cum[i]), hi=samples.map((sm,i)=>cum[i]+(sm.m[id]||0));
+      let d=`M${X(samples[0].v)},${Y(hi[0])}`; for(let i=1;i<=N;i++) d+=`L${X(samples[i].v).toFixed(1)},${Y(hi[i]).toFixed(1)}`;
+      for(let i=N;i>=0;i--) d+=`L${X(samples[i].v).toFixed(1)},${Y(lo[i]).toFixed(1)}`;
+      s+=`<path d="${d}Z" style="fill:${fv(m.fam)};stroke:var(--paper)" fill-opacity="${op}" stroke-width=".6"><title>${esc(m.n)}</title></path>`;
+      let best=-1,bi=0; samples.forEach((sm,i)=>{const sh=sm.m[id]||0; if(sh>best){best=sh;bi=i;}});
+      const bh=(hi[bi]-lo[bi])*ph; if(bh>15){ const x=Math.min(Math.max(X(samples[bi].v),L+34),W-R-34); s+=`<text x="${x.toFixed(1)}" y="${(Y((hi[bi]+lo[bi])/2)+3.5).toFixed(1)}" text-anchor="middle" font-family="Jost,Futura,sans-serif" font-size="10.5" letter-spacing=".6" style="fill:${op<.6?'var(--ink)':'var(--ground)'}" pointer-events="none">${esc(m.n.split(' (')[0])}</text>`; }
+      hi.forEach((v,i)=>cum[i]=v);
+    });
+    let sd=''; samples.forEach((sm,i)=>{ sd+=(i?'L':'M')+X(sm.v).toFixed(1)+','+Y(Math.sqrt(sm.tot/tot0)).toFixed(1); });
+    s+=`<path d="${sd}" fill="none" style="stroke:var(--ink)" stroke-width="1.4" stroke-dasharray="4 4"/>`;
+    s+=`<text x="${X(40)}" y="${Y(1)+13}" font-family="Jost,Futura,sans-serif" font-size="9.5" letter-spacing="1.5" style="fill:var(--ink)">OVERALL STRENGTH</text>`;
+    [[0,"Spray"],[200,"15 min"],[400,"1 h"],[600,"3 h"],[800,"6 h"],[1000,"12 h"]].forEach(([v,t],i)=>{ s+=`<text x="${X(v)}" y="${Hh-12}" text-anchor="${i===0?'start':i===5?'end':'middle'}" font-family="Jost,Futura,sans-serif" font-size="10" letter-spacing="1" style="fill:var(--ink-3)">${t.toUpperCase()}</text>`; });
+    s+=`<line id="cur" x1="${X(st.v)}" x2="${X(st.v)}" y1="${T}" y2="${T+ph}" style="stroke:var(--ink)" stroke-width="1.5"/><circle id="curDot" cx="${X(st.v)}" cy="${T}" r="4" style="fill:var(--ink)"/>`;
+    s+=`<rect id="hit" x="${L}" y="${T}" width="${pw}" height="${ph}" fill="transparent" style="cursor:ew-resize"/></svg>`;
+    $('#chartCard').innerHTML=`<p class="label">Share of what you smell, over twelve hours</p>${s}
+      <label class="small-caps" for="labT" style="display:block;margin-top:10px">Scrub through time</label><input type="range" id="labT" min="0" max="1000" value="${st.v}">
+      <div class="readout"><span class="when" id="rWhen"></span><span class="what" id="rWhat"></span></div><p class="character" id="rChar"></p>`;
+    const svg=$('#chartCard svg'), setV=v=>{ st.v=Math.max(0,Math.min(1000,v)); $('#labT').value=st.v; $('#cur').setAttribute('x1',X(st.v)); $('#cur').setAttribute('x2',X(st.v)); $('#curDot').setAttribute('cx',X(st.v)); readout(); save(); };
+    $('#labT').addEventListener('input',e=>setV(+e.target.value));
+    let drag=false; const fromEvt=e=>{ const r=svg.getBoundingClientRect(); return ((e.clientX-r.left)/r.width*W-L)/pw*1000; };
+    $('#hit').addEventListener('pointerdown',e=>{drag=true; $('#hit').setPointerCapture(e.pointerId); setV(fromEvt(e));});
+    $('#hit').addEventListener('pointermove',e=>{ if(drag) setV(fromEvt(e)); });
+    $('#hit').addEventListener('pointerup',()=>drag=false);
+    readout();
+  }
+  function readout(){
+    const h=SC12.toH(st.v), sn=snap(st.f,h), top=[...sn.rows].sort((a,b)=>b.s-a.s).slice(0,3);
+    $('#rWhen').textContent=whenTxt(h);
+    $('#rWhat').innerHTML=top.map(r=>`<b style="font-weight:500">${esc(r.m.n)}</b> ${Math.round(r.s*100)}%`).join(' · ');
+    const words=[]; top.forEach(r=>r.m.d.slice(0,2).forEach(w=>{ if(!words.includes(w)) words.push(w); }));
+    $('#rChar').textContent=words.slice(0,5).join(', ')+'.';
+  }
+  function all(){ renderPresets(); renderFormula(); renderDilute(); renderChart(); save(); }
+  let raf=0; const soon=()=>{ cancelAnimationFrame(raf); raf=requestAnimationFrame(()=>{ renderDilute(); renderChart(); save(); const tot=Object.values(st.f).reduce((a,b)=>a+b,0)||1; $$('#formula .f-row').forEach(r=>{ const id=$('[data-r]',r).dataset.r; $('.pct',r).textContent=(st.f[id]/tot*100).toFixed(1); }); $('#formula .tot').textContent=`Total ${tot} parts · ${ids().length} materials`; const nb=$('#norm'); if(nb){ nb.disabled=tot===1000; nb.style.opacity=tot===1000?.4:1; } $('#formula .f-head .small-caps').textContent=`Parts per ${tot===1000?'thousand':'total'}`; }); };
+  $('#presets').addEventListener('click',e=>{ const b=e.target.closest('[data-p]'); if(!b) return; const p=PRESETS.find(x=>x.id===b.dataset.p); st.name=p.n; st.f={...p.f}; all(); toast(`Loaded ${p.n}`); });
+  $('#formula').addEventListener('input',e=>{ const id=e.target.dataset.r||e.target.dataset.n; if(!id) return; const v=Math.max(0,Math.min(1000,Math.round(+e.target.value||0))); st.f[id]=v; st.name=st.name.endsWith('(edited)')||st.name==='Your formula'?st.name:st.name+' (edited)';
+    const row=e.target.closest('.f-row'); if(e.target.dataset.r) $('[data-n]',row).value=v; else $('[data-r]',row).value=Math.min(500,v); $('#formula h3').textContent=st.name; soon(); });
+  $('#formula').addEventListener('click',e=>{ const rm=e.target.closest('[data-rm]'); if(rm){ delete st.f[rm.dataset.rm]; if(!Object.keys(st.f).length) st.f={bergamot:500,cedarwood:500}; all(); return; }
+    const op=e.target.closest('[data-open]'); if(op){ openMaterial(op.dataset.open); return; }
+    if(e.target.id==='norm'){ const tot=Object.values(st.f).reduce((a,b)=>a+b,0)||1; let acc=0; const keys=Object.keys(st.f); keys.forEach((k,i)=>{ st.f[k]= i<keys.length-1? Math.round(st.f[k]/tot*1000) : 0; acc+=st.f[k]; }); st.f[keys[keys.length-1]]=Math.max(0,1000-acc); all(); } });
+  $('#formula').addEventListener('change',e=>{ if(e.target.id==='addMat'&&e.target.value){ st.f[e.target.value]=50; if(!st.name.endsWith('(edited)')) st.name+=' (edited)'; all(); } });
+  $('#dilute').addEventListener('change',e=>{ if(e.target.id==='dConc') st.conc=+e.target.value; if(e.target.id==='dMl') st.ml=+e.target.value; renderDilute(); save(); });
+  return { render:all, add(id){ if(!(id in st.f)){ st.f[id]=50; if(!st.name.endsWith('(edited)')) st.name+=' (edited)'; } } };
+})();
+
+/* ---------- Classics, lineages, atlas, glossary ---------- */
+function renderClassics(){
+  $('#classicsList').innerHTML=CLASSICS.map(c=>`<div class="tl-row"><span class="y">${c.y}</span>
+    <div><h3>${esc(c.n)}</h3><p class="by">${esc(c.h)} · Nose: <b>${esc(c.nose)}</b></p></div>
+    <div><p>${esc(c.w)}</p><div class="chips">${c.m.map(id=>`<button type="button" class="chip" data-open="${id}"><span class="dot" style="background:${fv(MAT[id].fam)}"></span>${esc(MAT[id].n)}</button>`).join('')}</div></div></div>`).join('');
+  $('#lineages').innerHTML=LINEAGES.map(l=>`<div class="card lineage"><p class="label">House</p><h3>${l.h}</h3><ol>${l.l.map(n=>`<li>${esc(n)}</li>`).join('')}</ol></div>`).join('');
+}
+$('#classicsList').addEventListener('click',e=>{const b=e.target.closest('[data-open]'); if(b) openMaterial(b.dataset.open);});
+function renderAtlas(){ $('#places').innerHTML=ATLAS.map(a=>`<div class="place"><span class="c">${a.c}</span><h3>${a.p}${a.r?`<span class="muted" style="font-size:.6em"> · ${a.r}</span>`:''}</h3><span class="m">${a.m}</span><p>${a.d}</p></div>`).join(''); }
+function renderGloss(){ const q=($('#glossQ').value||'').toLowerCase(); const l=GLOSSARY.filter(([t,d])=>!q||(t+' '+d).toLowerCase().includes(q)); $('#glossList').innerHTML=l.length?l.map(([t,d])=>`<div><dt>${t}</dt><dd>${d}</dd></div>`).join(''):`<p class="empty" style="grid-column:1/-1">No terms match “${esc(q)}”.</p>`; }
+$('#glossQ').addEventListener('input',renderGloss);
+function renderHouses6(){ $('#houses6').innerHTML=HORDER.map(k=>`<div class="card h6"><span style="width:56px;height:56px;border-radius:50%;background:var(--night);display:grid;place-items:center">${sigil(k,48)}</span><div><h3>${H[k].name}</h3><p>“${H[k].motto}”</p></div></div>`).join(''); }
+
+/* ---------- Journal ---------- */
+const EXAMPLE={name:"Terre d'Hermès",fam:"woody",on:"Smelling strip",words:"flint, orange peel, pencil",notes:"Bright orange at first, then dry and mineral. Still there on the strip the next morning.",stars:4,date:"Example",ex:true};
+let jStars=4;
+function renderJournal(){
+  $('#jFam').innerHTML=Object.keys(FAMS).map(f=>`<option value="${f}">${FAMS[f].n}</option>`).join('');
+  $('#jStars').innerHTML=[1,2,3,4,5].map(i=>`<input type="radio" name="jstar" id="js${i}" value="${i}" ${i===jStars?'checked':''}><label for="js${i}" class="${i<=jStars?'on':''}" aria-label="${i} of 5">★</label>`).join('');
+  const list=store.get('sillage-journal',[]), show=list.length?list:[EXAMPLE];
+  $('#entries').innerHTML=show.map((e,i)=>`<article class="card entry"><div class="top"><h3>${esc(e.name)}</h3><span class="meta">${e.ex?'<span class="example-tag">Example</span>':esc(e.date)}</span></div>
+    <span class="meta"><span class="dot" style="background:${fv(e.fam)}"></span> ${FAMS[e.fam]?.n||''} · ${esc(e.on)} · ${'★'.repeat(e.stars)}${'☆'.repeat(5-e.stars)}</span>
+    ${e.words?`<p style="font-family:var(--display);font-style:italic;font-size:19px;color:var(--ink)">${esc(e.words)}</p>`:''}${e.notes?`<p>${esc(e.notes)}</p>`:''}
+    ${e.ex?'':`<span class="del" data-i="${i}"><button type="button" class="linkish" data-del="${i}">Delete</button></span>`}</article>`).join('');
+}
+$('#jStars').addEventListener('change',e=>{ jStars=+e.target.value; $$('#jStars label').forEach((l,i)=>l.classList.toggle('on',i<jStars)); });
+$('#jform').addEventListener('submit',e=>{ e.preventDefault(); const list=store.get('sillage-journal',[]);
+  list.unshift({name:$('#jName').value.trim(),fam:$('#jFam').value,on:$('#jOn').value,words:$('#jWords').value.trim(),notes:$('#jNotes').value.trim(),stars:jStars,date:new Date().toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'})});
+  store.set('sillage-journal',list); $('#jform').reset(); jStars=4; renderJournal(); toast("Added to your journal"); });
+$('#entries').addEventListener('click',e=>{
+  const d=e.target.closest('[data-del]'); if(d){ const wrap=d.parentElement; wrap.innerHTML=`<span class="small-caps">Delete this entry?</span> <button type="button" class="linkish" data-yes="${d.dataset.del}">Delete</button> <button type="button" class="linkish" data-no>Keep</button>`; return; }
+  const y=e.target.closest('[data-yes]'); if(y){ const list=store.get('sillage-journal',[]); list.splice(+y.dataset.yes,1); store.set('sillage-journal',list); renderJournal(); toast("Entry deleted"); return; }
+  if(e.target.closest('[data-no]')) renderJournal();
+});
+
+/* ---------- Home ---------- */
+let heroRows=[];
+function renderHome(){
+  Blotter($('#heroBlotter'),{formula:PRESETS[0].f,title:"On the blotter",sub:"Study No. 1 · a woody cologne",start:80,onUpdate:rows=>heroRows=rows});
+  $('#doors').innerHTML=[
+    ["organ","The Organ",`${MATERIALS.length} materials`,"Naturals and aroma chemicals, with origins, CAS numbers and the perfumes they shaped."],
+    ["lab","The Lab",`${PRESETS.length} classic structures`,"Compose in parts per thousand and watch a formula wear from spray to next morning."],
+    ["classics","The Classics",`${CLASSICS.length} perfumes`,"From Fougère Royale to Santal 33, each with the nose who made it."],
+    ["atlas","The Atlas",`${ATLAS.length+1} places`,"Where materials come from, from Kannauj's copper stills to Calabria's bergamot."]
+  ].map(([h,t,c,d])=>`<a class="card door" href="#${h}"><span class="count">${c}</span><h3>${t}</h3><p>${d}</p><span class="linkish" style="margin-top:6px">Open →</span></a>`).join('');
+  const day=Math.floor(Date.now()/864e5), m=MATERIALS[day%MATERIALS.length];
+  $('#motd').innerHTML=`<div class="motd"><div><p class="label">Material of the day</p><h3>${esc(m.n)}</h3><p style="font-family:var(--display);font-style:italic;font-size:20px;color:var(--ink-2);margin-top:8px">${m.d.join(', ')}</p></div>
+    <div><p class="lede">${esc(m.src)} ${esc(m.note)}</p><p style="margin-top:18px"><button type="button" class="btn ghost small" id="motdOpen">Open in the organ</button></p></div></div>`;
+  $('#motdOpen').addEventListener('click',()=>openMaterial(m.id));
+}
+
+/* ---------- Hero vapour ---------- */
+const heroBand=$('#heroBand');
+const heroVapor=Vapor($('#heroCanvas'),heroBand,{
+  max:260, trail:false, scale:.0016, tscale:.3, flow:.22, drag:.985, rise:.06, mistAlpha:.05, grow:.35, twinkle:.035,
+  palette:()=>heroRows.length?heroRows.map(r=>[GLOW[r.m.fam],r.s+.04]):[["214,190,242",1]],
+  stillX:()=>heroBand.clientWidth*(.35+Math.random()*.65),
+  onFrame:(t,api)=>{
+    const W=api.W, H=api.H;
+    /* keep a quiet population of motes and a few slow veils of haze */
+    if(api.count<120 && Math.random()<.35){
+      const x=W*(.25+Math.random()*.75), y=H*(.15+Math.random()*.85);
+      api.emit(x,y,{kind:'glint',n:1,spread:0,jit:.12,vy:-.08,life:500+Math.random()*500,size:1.6+Math.random()*2.6});
+    }
+    if(Math.random()<.02) api.emit(W*(.4+Math.random()*.6),H*(.3+Math.random()*.7),{n:1,spread:0,jit:.05,vy:-.05,life:900+Math.random()*400,size:70+Math.random()*70});
+    /* a thin thread of motes lifting from the blotter's tip */
+    const bl=$('#heroBlotter'); if(bl && Math.random()<.07){ const br=bl.getBoundingClientRect(), hr=heroBand.getBoundingClientRect();
+      api.emit(br.left-hr.left+br.width/2+(Math.random()-.5)*24, br.top-hr.top+10,{kind:'glint',n:1,spread:0,jit:.08,vy:-.35,life:420+Math.random()*260,size:1.8+Math.random()*2.2}); }
+  }
+});
+let lastP=null, carry=0;
+heroBand.addEventListener('pointermove',e=>{
+  const r=heroBand.getBoundingClientRect(), x=e.clientX-r.left, y=e.clientY-r.top;
+  if(lastP){ carry+=Math.hypot(x-lastP[0],y-lastP[1]);
+    while(carry>46){ carry-=46; heroVapor.emit(x,y,{kind:'glint',n:1,spread:14,jit:.15,vy:-.12,life:260+Math.random()*220,size:1.8+Math.random()*2.4}); } }
+  lastP=[x,y];
+});
+heroBand.addEventListener('pointerleave',()=>{lastP=null; carry=0;});
+new IntersectionObserver(es=>heroVapor.visible(es[0].isIntersecting)).observe(heroBand);
+window.addEventListener('resize',()=>heroVapor.resize());
+
+/* ---------- Router ---------- */
+const VIEWS=['home','learn','lesson','organ','lab','families','classics','atlas','glossary','journal'];
+let cur=null, rendered={};
+function go(target){ show(target); try{ if(location.hash.slice(1)!==target) history.pushState(null,'','#'+target); }catch(e){} }
+function show(target){
+  let v=target||'home', n=null; const m=v.match(/^lesson-([1-6])$/); if(m){n=+m[1]; v='lesson';}
+  if(!VIEWS.includes(v)||v==='lesson'&&!n) v= v==='lesson'?'learn':'home';
+  cur=target;
+  $$('.view').forEach(s=>s.hidden=s.dataset.view!==v);
+  $$('.nav a').forEach(a=>{ const h=a.getAttribute('href').slice(1); a.toggleAttribute('aria-current',h===v||(v==='lesson'&&h==='learn')); if(a.hasAttribute('aria-current')) a.setAttribute('aria-current','page'); });
+  if(v==='lesson') renderLesson(n);
+  if(v==='lab') LAB.render();
+  if(v==='organ'&&!rendered.organ){ renderOrgan(); rendered.organ=1; }
+  if(v==='families'&&!rendered.fam){ Wheel($('#wheelSvg'),$('#famCard')); renderHouses6(); rendered.fam=1; }
+  if(v==='classics'&&!rendered.cl){ renderClassics(); rendered.cl=1; }
+  if(v==='atlas'&&!rendered.at){ renderAtlas(); rendered.at=1; }
+  if(v==='glossary'&&!rendered.gl){ renderGloss(); rendered.gl=1; }
+  if(v==='journal') renderJournal();
+  if(v==='learn'||v==='home') progress();
+  if(v==='home'){ heroVapor.resize(); heroVapor.start(); } else heroVapor.visible(false);
+  window.scrollTo(0,0);
+  const sec=$(`.view[data-view="${v}"]`); if(sec) sec.focus({preventScroll:true});
+}
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href^="#"]'); if(!a||a.closest('.ceremony')) return;
+  const t=a.getAttribute('href').slice(1); if(!t) return; e.preventDefault(); if($('#sheetRoot').innerHTML) closeSheet(); go(t);
+});
+window.addEventListener('popstate',()=>show(location.hash.slice(1)||'home'));
+window.addEventListener('hashchange',()=>{ const t=location.hash.slice(1); if(t!==cur) show(t); });
+/* ================= THE SORTING ================= */
+const QS=[
+  {q:"You find a door in a garden wall that wasn't there yesterday. Behind it is…", o:[
+    ["A grove of lemon trees at noon",{H:3}],["A room of roses that never wilt",{F:3}],["A lavender field under a full moon",{Fo:3}],
+    ["A ruined chapel, swallowed by moss",{C:3}],["A cedar forest older than any map",{B:3}],["A lantern-lit bazaar that smells of spice",{A:3}]]},
+  {q:"Dawn or dusk?", o:[["Dawn",{H:1,Fo:1,F:1}],["Dusk",{C:1,B:1,A:1}]]},
+  {q:"A stranger offers you one bottle. They won't say what's inside. You take…", o:[
+    ["The one cold as sea glass",{H:2,Fo:1}],["The one of rose-pink crystal",{F:3}],["The green one, sealed with old wax",{C:2,Fo:1}],
+    ["The smoky black one",{B:3}],["The amber one, warm to the touch",{A:3}]]},
+  {q:"You may keep one moment forever, sealed in a bottle. Which?", o:[
+    ["Sheets snapping on a line in the sun",{H:2,Fo:1}],["Grandmother's garden in June",{F:3}],["The first rain after a long summer",{B:2,C:1}],
+    ["Bread coming out of the oven",{A:3}],["Walking into a very old library",{C:2,B:1}],["A barbershop on a Saturday morning",{Fo:3}]]},
+  {q:"A potion grants you one power, for one day only.", o:[
+    ["Breathe beneath the sea",{H:3}],["Speak with flowers",{F:3}],["Never grow tired",{Fo:3}],
+    ["Walk unseen",{C:3}],["Hear what the trees remember",{B:3}],["Turn cold rooms warm with a touch",{A:3}]]},
+  {q:"Four paths lead into the woods. You take…", o:[
+    ["The wide, sunlit one",{H:2,F:1}],["The one lined with wildflowers",{F:3}],["The one down to the dark, mossy stream",{C:3}],
+    ["The one toward distant music and firelight",{A:3}]]},
+  {q:"Somewhere in the house, an instrument is playing. You follow…", o:[
+    ["A flute",{H:3}],["A harp",{F:3}],["A guitar",{Fo:3}],["A cello",{C:3}],["A low drum",{B:3}],["A saxophone",{A:3}]]},
+  {q:"When you are gone, you would rather be remembered as…", o:[
+    ["The bright one",{H:3}],["The kind one",{F:3}],["The steady one",{Fo:3}],["The mysterious one",{C:3}],["The wise one",{B:3}],["The warm one",{A:3}]]}
+];
+const ROMAN=['I','II','III','IV','V','VI','VII','VIII'];
+const CER=(()=>{
+  const root=$('#ceremony'), stage=$('#stage'), drops=$('#drops');
+  let step=-1, answers=[], order=[], house=store.get('sillage-house',null), phase='idle', claim=null, claimT=0;
+  if(house&&!H[house]) house=null;
+  const shuffle=a=>{const b=[...a]; for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [b[i],b[j]]=[b[j],b[i]];} return b;};
+  const scores=()=>{ const S={H:0,F:0,Fo:0,C:0,B:0,A:0}; answers.forEach((oi,qi)=>{ if(oi==null) return; const w=QS[qi].o[oi][1]; for(const k in w) S[k]+=w[k]; }); return S; };
+  const ranked=()=>{ const S=scores(); return [...HORDER].sort((a,b)=>S[b]-S[a]||Math.random()-.5); };
+  const orb=()=>[vap.W/2, Math.min(170, vap.H*.2)];
+
+  let bloomT=0;
+  const mix=()=>{ const S=scores(), mx=Math.max(1,...Object.values(S)); const k=claim?Math.min(1,(performance.now()-claimT)/3600):0;
+    let r=0,g=0,b=0,w=0; HORDER.forEach(h=>{ const wt=claim?(h===claim?.02+k:(1-k)*.35):.4+Math.pow(S[h]/mx,2); const c=H[h].c.split(',').map(Number); r+=c[0]*wt; g+=c[1]*wt; b+=c[2]*wt; w+=wt; });
+    return [r/w,g/w,b/w].map(Math.round).join(','); };
+  const vap=Vapor($('#cCanvas'),document.documentElement,{
+    max:220, trail:false, scale:.0022, tscale:.3, flow:.18, rise:0, drag:.985, mistAlpha:.05, grow:.3, twinkle:.03, seek:.0035,
+    palette:()=>{ const S=scores(), mx=Math.max(1,...Object.values(S)); const k=claim?Math.min(1,(performance.now()-claimT)/3600):0;
+      return HORDER.map(h=>[H[h].c, claim ? (h===claim?1+k*12:Math.max(.02,1-k)) : .3+Math.pow(S[h]/mx,2)]); },
+    stillX:()=>vap.W/2+(Math.random()-.5)*300, stillY:()=>Math.min(170,vap.H*.2)+(Math.random()-.5)*200,
+    onDraw:(ctx,t)=>{ const [ox,oy]=orb(), col=mix();
+      const bl=bloomT?Math.max(0,1-(performance.now()-bloomT)/2600):0, ease=Math.sin(Math.PI*Math.min(1,1-bl));
+      const R=110+10*Math.sin(t*.55)+ (bloomT? 70*Math.sin(Math.PI*Math.min(1,(performance.now()-bloomT)/2600)) : 0);
+      const A=.28+.05*Math.sin(t*.55);
+      const g=ctx.createRadialGradient(ox,oy,0,ox,oy,R*1.9);
+      g.addColorStop(0,`rgba(255,250,255,${(A*.9).toFixed(3)})`); g.addColorStop(.12,`rgba(${col},${A.toFixed(3)})`);
+      g.addColorStop(.45,`rgba(${col},${(A*.28).toFixed(3)})`); g.addColorStop(1,`rgba(${col},0)`);
+      ctx.fillStyle=g; ctx.beginPath(); ctx.arc(ox,oy,R*1.9,0,6.283); ctx.fill(); },
+    force:(p)=>{ if(p.tgt||p.free) return [0,0]; const [ox,oy]=orb(), dx=ox-p.x, dy=oy-p.y, d=Math.hypot(dx,dy)+1;
+      return [dx*.00018 - dy/d*.006, dy*.00018 + dx/d*.006]; },
+    onFrame:(t,api)=>{ const [ox,oy]=orb();
+      if(api.count<90 && Math.random()<.3){ const a=Math.random()*6.283, r=60+Math.random()*150;
+        api.emit(ox+Math.cos(a)*r, oy+Math.sin(a)*r*.7,{kind:'glint',n:1,spread:0,jit:.1,vx:-Math.sin(a)*.18,vy:Math.cos(a)*.14,life:500+Math.random()*500,size:1.5+Math.random()*2.4}); }
+      if(Math.random()<.015){ const a=Math.random()*6.283, r=40+Math.random()*90; api.emit(ox+Math.cos(a)*r, oy+Math.sin(a)*r*.7,{n:1,spread:0,jit:.04,life:900,size:60+Math.random()*50}); }
+    }
+  });
+  window.addEventListener('resize',()=>{ if(!root.hidden) vap.resize(); });
+
+  function renderDrops(){ drops.innerHTML=QS.map((_,i)=>`<i class="${answers[i]!=null?'on':''}${i===step?' cur':''}"></i>`).join(''); drops.setAttribute('aria-label', step>=0&&step<QS.length?`Question ${step+1} of ${QS.length}`:'Progress'); }
+  function show(html,cls=''){ stage.innerHTML=`<div class="screen ${cls}">${html}</div>`; renderDrops(); const h=stage.querySelector('h1,h2'); if(h){h.tabIndex=-1; h.focus({preventScroll:true});} root.scrollTop=0; }
+
+  function welcome(){
+    step=-1; phase='idle'; claim=null;
+    if(house){ crest(house,true); return; }
+    show(`<p class="kicker">The Sorting</p>
+      <h1>Every nose belongs to a family. <span class="shimmer">Which one will claim you?</span></h1>
+      <p class="intro">Six ancient families of scent. Eight questions. There are no right answers, only honest ones, so answer quickly, before your head gets involved.</p>
+      <div class="c-nav"><button class="gbtn primary" id="begin" type="button">Begin the sorting</button></div>`);
+    $('#begin').onclick=()=>{ answers=Array(QS.length).fill(null); order=[]; ask(0); };
+  }
+  function ask(i){
+    step=i; phase='ask'; const q=QS[i]; order[i]=order[i]||shuffle(q.o.map((_,k)=>k));
+    const n=q.o.length, cols=n===2?'two':n===4?'four':n===5?'five':'six';
+    show(`<p class="roman">${ROMAN[i]}</p><h2>${q.q}</h2>
+      <div class="tiles ${cols}">${order[i].map(k=>`<button type="button" class="tile" data-k="${k}" aria-pressed="${answers[i]===k}">${q.o[k][0]}</button>`).join('')}</div>
+      <div class="c-nav"><button class="c-link" id="back" type="button">${i?'Back':'Start over'}</button></div>`);
+    $('.tiles',stage).addEventListener('click',e=>{
+      const b=e.target.closest('.tile'); if(!b||phase!=='ask') return; phase='wait'; answers[i]=+b.dataset.k;
+      $$('.tile',stage).forEach(t=>t.setAttribute('aria-pressed',t===b));
+      const r=b.getBoundingClientRect(), [ox,oy]=orb(), w=q.o[answers[i]][1], fams=Object.keys(w);
+      for(let j=0;j<7;j++){ const f=fams[j%fams.length]; vap.emit(r.left+r.width*(.2+Math.random()*.6), r.top+r.height*.5, {kind:'glint', rgb:H[f].c, jit:.2, vy:-.6-Math.random()*.4, tgt:[ox+(Math.random()-.5)*50, oy+(Math.random()-.5)*40], life:170+Math.random()*60, size:2+Math.random()*2.5}); }
+      renderDrops(); setTimeout(()=> i<QS.length-1?ask(i+1):sorting(), REDUCE?250:800);
+    });
+    $('#back').onclick=()=> i?ask(i-1):welcome();
+  }
+  function sorting(){
+    step=QS.length; phase='sorting'; const [a,b]=ranked(); house=a;
+    const lines=["Hmm. Difficult. Very difficult.",`${H[b].name} is making a case for you…`,`But ${H[a].name} will not let you go.`];
+    show(`<p class="kicker">The families are deliberating</p><h2 id="sl">${lines[0]}</h2>`,'sorting');
+    claim=a; claimT=performance.now(); let li=0;
+    const t=setInterval(()=>{ li++; const el=$('#sl'); if(li<lines.length&&el){ el.classList.remove('fadein'); void el.offsetWidth; el.textContent=lines[li]; el.classList.add('fadein'); } }, REDUCE?500:1300);
+    setTimeout(()=>{ clearInterval(t); burst(a); store.set('sillage-house',a); crest(a,false); updateChip(); }, REDUCE?1500:4000);
+  }
+  function burst(k){ if(REDUCE) return; bloomT=performance.now(); const [ox,oy]=orb(); for(let i=0;i<24;i++){ const a=Math.random()*6.283, s=.25+Math.random()*.5; vap.emit(ox,oy,{kind:'glint', rgb:H[k].c, vx:Math.cos(a)*s, vy:Math.sin(a)*s*.8, n:1, spread:30, jit:.05, life:400+Math.random()*300, size:1.8+Math.random()*2.4, free:true}); } }
+  function crest(k,returning){
+    phase='reveal'; claim=k; claimT=performance.now()-3600; const x=H[k], r=H[x.rival];
+    show(`<div class="crest glass" style="--hc:${x.c}">
+        <div class="sig-wrap">${sigil(k,120)}</div>
+        <p class="kicker" style="margin-top:10px">${returning?'You belong to':'You have been claimed by'}</p>
+        <h1 class="hname big">${x.name}</h1><p class="pron">${x.pron}</p><p class="motto">“${x.motto}”</p>
+        <div class="traits">${x.traits.map(t=>`<span>${t}</span>`).join('')}<span>Hour · ${x.hour}</span></div>
+        <p class="lore">${x.lore}</p></div>
+      <div class="lore-grid">
+        <div class="glass panel"><p class="kicker">Treasures of the house</p>${x.treasures.map(([h,n])=>`<p class="treasure"><span>${h}</span>${n}</p>`).join('')}</div>
+        <div class="glass panel"><p class="kicker">The house loves</p><div class="gchips">${x.loves.map(n=>`<span>${n}</span>`).join('')}</div></div>
+        <div class="glass panel"><p class="kicker">The house cannot bear</p><p class="scorn">${x.scorns}</p><p class="rival">Old rival: <b style="color:rgb(${r.c})">${r.name}</b></p></div>
+      </div>
+      <div class="c-nav"><button class="gbtn primary" id="enter" type="button">Enter Sillage</button><button class="gbtn" id="again" type="button">Be sorted again</button></div>`);
+    $('#enter').onclick=close; $('#again').onclick=()=>{ house=null; claim=null; answers=[]; order=[]; welcome(); };
+  }
+  function open(){ root.hidden=false; document.body.style.overflow='hidden'; vap.clear(); vap.start(); welcome(); heroVapor.visible(false); }
+  function close(){ root.hidden=true; document.body.style.overflow=''; vap.stop(); if(!cur||cur==='home') heroVapor.visible(true); const h1=$('.view:not([hidden])'); h1&&h1.focus({preventScroll:true}); }
+  $('#cSkip').addEventListener('click',close);
+  function updateChip(){ const c=$('#houseChip'); c.innerHTML= house?`${sigil(house,24)}<span>${H[house].name}</span>`:`<span style="padding-left:8px">Be sorted</span>`; c.setAttribute('aria-label',house?`Your house: ${H[house].name}. Open the crest`:'Take the sorting'); }
+  $('#houseChip').addEventListener('click',open);
+  updateChip();
+  return {open, get house(){return house;}};
+})();
+
+/* ---------- Boot ---------- */
+renderHome();
+show((location.hash||'').slice(1)||'home');
+if(!CER.house) CER.open();
+</script>
+</body>
+</html>
